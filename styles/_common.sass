@@ -66,7 +66,7 @@ body,html
     line-height: 1.5
     font-optical-sizing: auto
     font-style: normal
-    font-family: $ttrg
+    font-family: $poppins
     font-weight: normal
 b
     @include font(500)
@@ -97,7 +97,7 @@ small
     h2
         font-size: 48px
         line-height: 1.2
-        font-family: $poppins 
+        font-family: $ttrg-bd 
     p
         font-size: 16px
         line-height: 1.5
@@ -174,7 +174,7 @@ h1
 h2
     font-size: 54px
     line-height: 1.2
-    font-family: $poppins
+    font-family: $ttrg-bd 
     @include media(768)
         font-size: 40px
 h3
@@ -185,11 +185,11 @@ h3
     &:has(h2 ~ h6),&:has(h3 ~ h6),&:has(h2 ~ h5),&:has(h3 ~ h5),&:has(h2 ~ p),&:has(h3 ~ p)
         h3,h2
             margin-bottom: 12px
-    h3,h2
+    h2
         font-size: 48px
         line-height: 1.25
         color: $black
-        font-family: $poppins
+        font-family: $ttrg-bd 
         @include font(600)
         @include media(1230)
             font-size: 42px
@@ -730,7 +730,7 @@ button
         font-size: 48px
         margin-bottom: 45px
         text-align: center
-        font-family: $poppins
+        font-family: $ttrg-bd 
         font-weight: normal
         @include media(675)
             font-size: 34px
@@ -869,7 +869,7 @@ button
                     color: $white
         &.content-font2
             h1
-                font-family: $ttrg
+                font-family: $ttrg-bd
                 color: $black-light
                 @include font(600)
                 line-height: 1.25
@@ -887,7 +887,7 @@ button
         h1
             font-size: 48px
             line-height: 1.25
-            font-family: $ttrg
+            font-family: $ttrg-bd
             @include font(600)
             @include media(1152)
                 font-size: 42px
@@ -1094,7 +1094,7 @@ button
                 padding-left: 8px
 
 .sec-pad
-    padding: 70px 0 90px
+    padding: 60px 0 70px 0
     @include media(991)
         padding: 60px 0 80px
     @include media(768)

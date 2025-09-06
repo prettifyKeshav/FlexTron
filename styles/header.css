@@ -464,7 +464,7 @@ body, html {
   line-height: 1.5;
   font-optical-sizing: auto;
   font-style: normal;
-  font-family: "ttrg";
+  font-family: "poppins";
   font-weight: normal;
 }
 
@@ -502,7 +502,7 @@ small {
 .heading h2 {
   font-size: 48px;
   line-height: 1.2;
-  font-family: "poppins";
+  font-family: "ttrg-bd";
 }
 .heading p {
   font-size: 16px;
@@ -664,7 +664,7 @@ h1 {
 h2 {
   font-size: 54px;
   line-height: 1.2;
-  font-family: "poppins";
+  font-family: "ttrg-bd";
 }
 @media only screen and (max-width: 768px) {
   h2 {
@@ -681,44 +681,44 @@ h3 {
 .heading:has(h2 ~ h6) h3, .heading:has(h2 ~ h6) h2, .heading:has(h3 ~ h6) h3, .heading:has(h3 ~ h6) h2, .heading:has(h2 ~ h5) h3, .heading:has(h2 ~ h5) h2, .heading:has(h3 ~ h5) h3, .heading:has(h3 ~ h5) h2, .heading:has(h2 ~ p) h3, .heading:has(h2 ~ p) h2, .heading:has(h3 ~ p) h3, .heading:has(h3 ~ p) h2 {
   margin-bottom: 12px;
 }
-.heading h3, .heading h2 {
+.heading h2 {
   font-size: 48px;
   line-height: 1.25;
   color: var(--black);
-  font-family: "poppins";
+  font-family: "ttrg-bd";
   font-weight: 600;
 }
 @media only screen and (max-width: 1230px) {
-  .heading h3, .heading h2 {
+  .heading h2 {
     font-size: 42px;
   }
 }
 @media only screen and (max-width: 1152px) {
-  .heading h3, .heading h2 {
+  .heading h2 {
     font-size: 38px;
   }
 }
 @media only screen and (max-width: 991px) {
-  .heading h3, .heading h2 {
+  .heading h2 {
     font-size: 34px;
   }
 }
 @media only screen and (max-width: 767px) {
-  .heading h3, .heading h2 {
+  .heading h2 {
     font-size: 32px;
   }
 }
 @media only screen and (max-width: 520px) {
-  .heading h3, .heading h2 {
+  .heading h2 {
     font-size: 26px;
   }
 }
 @media only screen and (max-width: 345px) {
-  .heading h3, .heading h2 {
+  .heading h2 {
     font-size: 24px;
   }
 }
-.heading h3 span, .heading h2 span {
+.heading h2 span {
   color: var(--primary);
 }
 .heading h6 {
@@ -1473,7 +1473,7 @@ button {
   font-size: 48px;
   margin-bottom: 45px;
   text-align: center;
-  font-family: "poppins";
+  font-family: "ttrg-bd";
   font-weight: normal;
 }
 @media only screen and (max-width: 675px) {
@@ -1687,7 +1687,7 @@ button {
   color: var(--white);
 }
 .banner .content.content-font2 h1 {
-  font-family: "ttrg";
+  font-family: "ttrg-bd";
   color: var(--black-light);
   font-weight: 600;
   line-height: 1.25;
@@ -1708,7 +1708,7 @@ button {
 .banner .content h1 {
   font-size: 48px;
   line-height: 1.25;
-  font-family: "ttrg";
+  font-family: "ttrg-bd";
   font-weight: 600;
 }
 @media only screen and (max-width: 1152px) {
@@ -1998,7 +1998,7 @@ button {
 }
 
 .sec-pad {
-  padding: 70px 0 90px;
+  padding: 60px 0 70px 0;
 }
 @media only screen and (max-width: 991px) {
   .sec-pad {
@@ -2117,6 +2117,7 @@ header .header-wrapper {
   --elementcolor: var(--white);
   --elementhover: var(--primary);
   gap: 1.5rem;
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1019607843);
 }
 @media only screen and (max-width: 1024px) {
   header .header-wrapper {
