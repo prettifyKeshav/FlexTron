@@ -67,12 +67,15 @@ export default function HomePage() {
       <main>
         <div className="banner home-banner">
           <div className="bg">
-            <figure>
+            <figure className='bg-video'>
               <video playsInline autoPlay muted loop width="100%" height="100%">
                 <source src="/assets/video/home-bg-banner.mp4" type="video/mp4" />
               </video>
-              <div className="x-vector">
-                <Image src="/assets/images/home/x-vector.png" width="204" height="25" alt="Flextron logo"></Image>
+              <div className="x-vector-icon">
+                <video playsInline autoPlay muted loop width="100%" height="100%">
+                  <source src="/assets/video/vector-bg1.mp4" type="video/mp4" />
+                </video>
+                {/* <Image src="/assets/images/home/x-vector.png" width="204" height="25" alt="Flextron logo"></Image> */}
               </div>
             </figure>
             <div className="banner-wrapper">

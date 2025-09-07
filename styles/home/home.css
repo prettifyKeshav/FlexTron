@@ -40,12 +40,12 @@
     height: 70vh;
   }
 }
-.banner.home-banner .bg figure {
+.banner.home-banner .bg .bg-video {
   transform: translateX(-30%);
   position: relative;
   height: 100%;
 }
-.banner.home-banner .bg figure::before {
+.banner.home-banner .bg .bg-video::before {
   content: "";
   position: absolute;
   top: 0;
@@ -54,15 +54,36 @@
   width: 100%;
   background: linear-gradient(90deg, rgba(60, 24, 198, 0.2) 25.96%, rgba(93, 74, 168, 0.2) 100%);
 }
-.banner.home-banner .bg figure video {
+.banner.home-banner .bg .bg-video video {
   opacity: 15%;
 }
-.banner.home-banner .bg figure .x-vector {
+.banner.home-banner .bg .bg-video .x-vector-icon {
   position: absolute;
   top: 55%;
   left: 99.8%;
   transform: translate(-50%, -50%);
   width: 40%;
+  -webkit-mask-image: url(/assets/images/home/x-vector.png);
+          mask-image: url(/assets/images/home/x-vector.png);
+  -webkit-mask-size: 100%;
+          mask-size: 100%;
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+  aspect-ratio: 1.22;
+  line-height: 0;
+}
+@media only screen and (max-width: 540px) {
+  .banner.home-banner .bg .bg-video .x-vector-icon {
+    -webkit-mask-size: 80%;
+            mask-size: 80%;
+  }
+}
+.banner.home-banner .bg .bg-video .x-vector-icon video {
+  opacity: 1;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .banner.home-banner .banner-wrapper {
   bottom: 25%;
@@ -223,6 +244,9 @@
 .home-secB .banner::before {
   background: linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 100%);
 }
+.home-secB .banner .bg figure {
+  height: 100%;
+}
 .home-secB .banner .bg figure video {
   width: 100%;
   height: 100%;
@@ -368,6 +392,11 @@
   height: 100%;
   z-index: 1;
   transition: 0.8s ease;
+}
+@media only screen and (min-width: 1500px) {
+  .home-secC .grid-box .col figure figcaption {
+    top: 78%;
+  }
 }
 .home-secC .grid-box .col figure figcaption .content {
   padding: 40px 0 0 30px;
