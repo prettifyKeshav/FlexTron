@@ -82,6 +82,7 @@ export default function HomePage() {
               <div className="container">
                 <div className="heading" data-animate="fade-up">
                   <h2>Where Electronic Circuits Meet</h2>
+                  <h2>Where Electronic Circuits Meet</h2>
                   <h1>Fighter Jet Standards</h1>
                   <p>Built with unmatched precision, our electronic circuits are engineered to meet the rigorous demands of aerospace-grade performance</p>
                 </div>
