@@ -74,8 +74,11 @@
           mask-repeat: no-repeat;
   aspect-ratio: 1.22;
   line-height: 0;
+<<<<<<< HEAD
   background: white;
   transitionc: 1s ease-in-out;
+=======
+>>>>>>> 5be8f39e2892c6b380272795dfeb20ea02510594
 }
 @media only screen and (max-width: 540px) {
   .banner.home-banner .bg .bg-video .x-vector-icon {
@@ -84,12 +87,16 @@
   }
 }
 .banner.home-banner .bg .bg-video .x-vector-icon video {
+<<<<<<< HEAD
   opacity: 0;
+=======
+>>>>>>> 5be8f39e2892c6b380272795dfeb20ea02510594
   opacity: 1;
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+<<<<<<< HEAD
   mix-blend-mode: luminosity;
   transition: 1s ease-in-out;
 }
@@ -146,6 +153,8 @@
   rotate: 90deg;
   pointer-events: none;
   z-index: -1;
+=======
+>>>>>>> 5be8f39e2892c6b380272795dfeb20ea02510594
 }
 .banner.home-banner .banner-wrapper {
   bottom: 25%;

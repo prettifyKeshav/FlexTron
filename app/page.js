@@ -59,7 +59,11 @@ export default function HomePage() {
       <main>
         <div className="banner home-banner">
           <div className="bg">
+<<<<<<< HEAD
             <figure className="bg-video">
+=======
+            <figure className='bg-video'>
+>>>>>>> 5be8f39e2892c6b380272795dfeb20ea02510594
               <video playsInline autoPlay muted loop width="100%" height="100%">
                 <source
                   src="/assets/video/home-bg-banner.mp4"
@@ -67,6 +71,7 @@ export default function HomePage() {
                 />
               </video>
               <div className="x-vector-icon">
+<<<<<<< HEAD
                 {/* <video
                   playsInline
                   autoPlay
@@ -85,6 +90,11 @@ export default function HomePage() {
                   loop
                   className="video-box"
                 />
+=======
+                <video playsInline autoPlay muted loop width="100%" height="100%">
+                  <source src="/assets/video/vector-bg1.mp4" type="video/mp4" />
+                </video>
+>>>>>>> 5be8f39e2892c6b380272795dfeb20ea02510594
                 {/* <Image src="/assets/images/home/x-vector.png" width="204" height="25" alt="Flextron logo"></Image> */}
               </div>
             </figure>
@@ -92,12 +102,18 @@ export default function HomePage() {
               <div className="container">
                 <div className="heading" data-animate="fade-up">
                   <h2>Where Electronic Circuits Meet</h2>
+<<<<<<< HEAD
                   <h1>{slidesData[activeIndex].heading}</h1>
                   <p>
                     Built with unmatched precision, our electronic circuits are
                     engineered to meet the rigorous demands of aerospace-grade
                     performance
                   </p>
+=======
+                  <h2>Where Electronic Circuits Meet</h2>
+                  <h1>Fighter Jet Standards</h1>
+                  <p>Built with unmatched precision, our electronic circuits are engineered to meet the rigorous demands of aerospace-grade performance</p>
+>>>>>>> 5be8f39e2892c6b380272795dfeb20ea02510594
                 </div>
               </div>
             </div>
