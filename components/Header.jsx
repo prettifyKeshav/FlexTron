@@ -20,7 +20,7 @@ export default function Header() {
                     <ul className="nav-a">
                         <li><Link href="/about-us">About Us</Link></li>
                         <li className="hasDropdown">
-                            <a href="#" aria-haspopup="true" aria-expanded="false">Services</a>
+                            <a href="/services" aria-haspopup="true" aria-expanded="false">Services</a>
                             <div className="dropdown-menu dropdown-menu-single" role="menu">
                                 <ul>
                                     <li><Link href="/sector-details">Advanced SMT PCB Assembly</Link></li>

@@ -1,7 +1,6 @@
 import Header from "@/components/Header";
-// import Footer from "@/components/Footer";
+import Footer from "@/components/Footer";
 import "../app/global.css"
-
 
 export const metadata = {
   title: "Flextron Circuit Assembly - We Engineer and Build for You !",
@@ -43,7 +42,7 @@ export default function RootLayout({ children }) {
       <body>
         <Header />
         {children}
-        {/* <Footer /> */}
+        <Footer />
       </body>
     </html>
   );

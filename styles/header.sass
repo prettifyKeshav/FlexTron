@@ -244,75 +244,58 @@ header
 
 
 footer
+    position: relative
+    &::before
+        content: ""
+        position: absolute
+        top: 0
+        left: 0
+        height: 100%
+        width: 100%
+        background: linear-gradient(180deg, #FFFFFF 0%, #CABAFF 100%)
+        z-index: -1
     @include media(540)
         margin-bottom: var(--footerstrip)
-    .call-to-action
-        width: 100%
-        background: var(--gradient-a)
-        padding: 15px 25px
-        align-items: center
-        @include media(991)
-            flex-direction: column
-            gap: 25px
-        @include media(540) 
-            padding: 35px
-        .colA
-            flex: 1
-            display: flex
-            align-items: center
-            @include media(540)     
-                flex-direction: column
-                width: 100%
-                align-items: start
-                gap: 10px
-            .action
-                display: flex
-                gap: 10px
-                padding: 0 30px
-                @include media(768) 
-                    gap: 6px
-                    padding: 0 10px
-                    flex: 1
-                @include media(540)     
-                    gap: 12px
-                &:first-child
-                    padding-left: 0
-                    @include media(540) 
-                        padding-left: 10px
-                &:not(:last-child)
-                    border-right: 1px solid $white
-                    @include media(540)     
-                        border-right: none
-                .contact
-                    h6
-                        font-family: $poppins
-                        font-size: 18px
-                        color: $white
-                        line-height: 1
-                        @include media(768) 
-                            font-size: 16px
-                    a
-                        color: $white
-        .colB
-            flex: 0 1 auto
-            display: flex
-            align-items: center
-            gap: 15px
     .main-footer
-        padding: 50px 25px 80px
+        padding: 50px 25px 10px
         display: flex
-        gap: 30px
+        gap: 60px
         @include media(991)
             flex-direction: column
         @include media(540)     
             padding: 30px 15px 50px
         .colA
-            flex: 0 1 auto
+            flex: 0 1 233px 
+            flex-direction: column
+            display: flex
+            gap: 100px
             @include media(991)
                 margin: 0 auto 20px
             @include media(540)     
                 margin: 0 auto
+            .social-icons
+                display: flex
+                justify-content: start
+                align-items: center
+                gap: 8px
+                a
+                    border: 1px solid #232963
+                    border-radius: 50%
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    height: 43px
+                    width: 43px
+                    &:hover
+                        background: #232963
+                        svg
+                            path
+                                fill: white
+                    svg 
+                        path
+                            fill: #232963
             img
+                height: fit-content
                 @include media(991)
                     height: 100%
                     object-fit: contain
@@ -328,47 +311,84 @@ footer
                 padding: 0
                 gap: 10px
             .list
-                flex: 1
+                flex: 1 1 10%
+                // flex: 1 1 20%
                 @include media(540)     
                     flex: 0 1 46%
                 h6
-                    font-size: 18px
                     line-height: 1.2
                     font-family: $poppins
-                    margin-bottom: 15px
+                    margin-bottom: 22px
+                    font-weight: 700
+                    font-size: 12px
+                    text-transform: uppercase
+                    color: $text
+                    letter-spacing: 2px
                 ul
                     li
+                        margin-bottom: 5px
                         a
-                            font-size: 16px
                             color: $text
-                            transition: .5s ease
                             padding-bottom: 5px
+                            font-weight: 600
+                            font-size: 14px
+                            line-height: 16px
+                            font-family: $poppins
+                            color: #232963
+                            transition: .5s ease
                             &:hover
-                                color: $black
+                                color: $primary
                                 padding-left: 5px
-                &:last-child
-                    flex: 0 1 40%
-                    @include media(540)     
+                &:nth-child(2)
+                    flex: 1 1
+                &:nth-child(3)
+                    flex: 0 1 30%
+                    @include media(540)
                         flex: 1
                         margin-top: 20px
+                    ul
+                        display: flex
+                        flex-direction: column
+                        gap: 10px
+                        li
+                            a
+                                font-size: 14px
+                                font-weight: 600
+                        li:first-child  
+                            span
+                                max-width: 60%
+                        .phone
+                            a
+                                font-weight: 600
+                                font-size: 25px
+                                font-family: $poppins
+                                display: flex
+                                justify-content: start
+                                align-items: center
+                        .bottom-btn
+                            a
+                                border-radius: 25px
+                                padding: 16px 24px
+                                background: #3107CA
+                                color: white
+                                display: flex
+                                justify-content: center
+                                align-items: center
+
+                                font-weight: 600
+                                font-size: 14px
+                                text-align: center
+                                text-transform: uppercase
+                                width: fit-content
+
+
                     a
                         display: flex
                         gap: 5px
                         svg
-                            flex: 0 1 50px
-
-        .colC
-            flex: 0 1 auto
-            .social-icons
-                display: flex
-                align-items: center
-                gap: 30px
-                @include media(991)
-                    justify-content: center
-
-    .bottom-footer
-        padding: 30px 25px 40px
-        border-top: 1px solid #CCCCCC
+                            flex: 0 1 30px
+    .middle-footer
+        padding: 30px 25px 190px
         display: flex
         justify-content: space-between
         width: 100%
@@ -376,14 +396,40 @@ footer
         @include media(540)     
             flex-direction: column
             gap: 5px
+        p
+            font-family: Poppins
+            font-weight: 400
+            font-size: 12px
+            color: $text
         .pret
             a
                 display: flex
                 align-items: center
                 color: $text
-                img
-                    width: 80px
-                    padding-left: 10px
+                font-family: Poppins
+                font-weight: 400
+                font-size: 12px
+    .bottom-footer
+        .bg
+            height: 50vh
+            // position: relative
+            .banner-wrapper
+                top: 0%
+                left: 50%
+                transform: translate(-50%, -50%)
+                height: fit-content
+                width: fit-content
+            figure 
+                height: 100%
+        .banner
+            &::before
+                background: none
+        .banner-image
+            width: 609px
+            height: 296px
+            display: flex
+            justify-content: center
+            align-items: center
 
 // footer
 //     background: linear-gradient(270deg, #000000 0%, #464646 100%)

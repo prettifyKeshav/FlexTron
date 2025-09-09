@@ -1,5 +1,6 @@
 'use client';
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Banner({
     videoSrc,
@@ -9,6 +10,8 @@ export default function Banner({
     description,
     buttonText,
     buttonLink = '#',
+    imageSrc,
+    imageAlt = "Banner Image",
 }) {
     return (
         <div className="banner">
@@ -18,7 +21,6 @@ export default function Banner({
                         <source src={videoSrc} type="video/mp4" />
                     </video>
                 </figure>
-
                 <div className="banner-wrapper">
                     <div className="container">
                         <div className="heading" data-animate="fade-up">
@@ -31,6 +33,17 @@ export default function Banner({
                                 <Link href={buttonLink} className="bottom-btn">
                                     {buttonText}
                                 </Link>
+                            )}
+                            {imageSrc && (
+                                <div className="banner-image">
+                                    <Image 
+                                        src={imageSrc} 
+                                        alt={imageAlt} 
+                                        width={600} 
+                                        height={400} 
+                                        priority
+                                    />
+                                </div>
                             )}
                         </div>
                     </div>

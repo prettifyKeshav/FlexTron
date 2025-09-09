@@ -10,10 +10,11 @@
             height: 100vh
             @include media(540)
                 height: 70vh
-            figure
+            .bg-video
                 transform: translateX(-30%)
                 position: relative
                 height: 100%
+                transition: 1s ease-in-out
                 &::before
                     content: ""
                     position: absolute
@@ -22,26 +23,83 @@
                     height: 100%
                     width: 100%
                     background: linear-gradient(90deg, rgba(60, 24, 198, 0.2) 25.96%, rgba(93, 74, 168, 0.2) 100%)
+                    transition: 1s ease-in-out
                 video
                     opacity: 15%
-                .x-vector
+                    transition: 1s ease-in-out
+                .x-vector-icon
                     position: absolute
                     top: 55%
                     left: 99.8%
                     transform: translate(-50%, -50%)
                     width: 40%
-                // .video-icon
-                //     mask-image: url(/assets/images/home/about-vector.svg)
-                //     mask-size: 100%
-                //     mask-repeat: no-repeat
-                //     aspect-ratio: 0.9876
-                //     line-height: 0
-                //     // @include media(540)
-                //     //     mask-size: 80%
-                //     video
-                //         width: 100%
-                //         height: 100%
-                //         object-fit: cover
+
+                    mask-image: url(/assets/images/home/x-vector.png)
+                    mask-size: 100%
+                    mask-repeat: no-repeat
+                    aspect-ratio: 1.22
+                    line-height: 0
+                    background: white
+                    transitionc: 1s ease-in-out
+                    @include media(540)
+                        mask-size: 80%
+                    video
+                        opacity: 0
+                        opacity: 1
+                        width: 100%
+                        height: 100%
+                        object-fit: cover
+                        mix-blend-mode: luminosity
+                        transition: 1s ease-in-out
+        .swiper
+            position: absolute
+            top: 55%
+            left: 94%
+            transform: translate(-50%,-50%)
+            z-index: 3
+            width: 20%
+            .swiper-pagination
+                width: 100%
+                display: flex
+                justify-content: center
+                align-items: center
+                position: relative
+                z-index: 2
+                height: 160px
+                rotate: 90deg
+                gap: 8px
+                // opacity: 0
+                span
+                    position: relative
+                    background-color: white
+                    opacity: 1
+                    transition: 0.5s ease
+                    &::before
+                        content: ""
+                        position: absolute
+                        top: -8px
+                        left: -3px
+                        width: 2px
+                        height: 29px
+                        background: white
+                        rotate: 90deg
+                        pointer-events: none
+                        z-index: -1
+                        transition: 0.5s ease
+                .swiper-pagination-bullet-active
+                    background: $primary
+                    transition: 0.5s ease
+                    &::after
+                        content: ""
+                        position: absolute
+                        top: -8px
+                        left: -3px
+                        width: 2px
+                        height: 29px
+                        background: $primary
+                        rotate: 90deg
+                        pointer-events: none
+                        z-index: -1
 
         .banner-wrapper
             bottom: 25%
@@ -139,6 +197,7 @@
             background: linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 100%)
         .bg
             figure
+                height: 100%
                 video
                     width: 100%
                     height: 100%
@@ -184,6 +243,29 @@
                     font-size: 16px
                     line-height: 10px
                     text-transform: uppercase
+            .right-wrapper
+                display: flex
+                align-items: center
+                justify-content: right
+                gap: 40px
+                img
+                    width: fit-content
+                .year
+                    span
+                        font-weight: 600
+                        font-size: 24px
+                        color: white
+                        line-height: 30px
+                    p
+                        color: $white
+                        font-weight: 400
+                        font-size: 15px
+                        line-height: 30px
+                .play-button
+                    .play-btn
+                        background: white
+                        &::after
+                            border-left: calc(var(--btnsize) / 5.6) solid #3107CA
 
 .home-secC
     padding: 0px 0 60px 0
@@ -208,7 +290,6 @@
                             scale: 1
                             margin-left: 0
                             margin-top: 0
-
                 figure
                     &::before
                         background: #3107CA
@@ -253,6 +334,8 @@
                     height: 100%
                     z-index: 1
                     transition: 0.8s ease
+                    @include media-min(1500)
+                        top: 78%
                     .content
                         padding: 40px 0 0 30px
                         h5
@@ -337,87 +420,15 @@
 
 .home-secE
     background: #3107CA
+    padding: 0 0 100px 0
     .heading
-        padding: 60px 0 50px 0
+        padding: 60px 0 0px 0
         text-align: center
         h2
             color: $white
 
 
-    
-
-.home-secF
-    .why-section
-        text-align: center
-        .why-grid
-            padding: 60px 0
-            display: grid
-            grid-template-columns: repeat(4, 1fr)
-            grid-gap: 15px
-            @include media(991) 
-                grid-template-columns: repeat(3, 1fr)
-            @include media(768) 
-                grid-template-columns: repeat(2, 1fr)
-                padding: 40px 0 
-            @include media(540)     
-                grid-template-columns: repeat(1, 1fr)
-                grid-gap: 20px
-            .item
-                background-color: $white
-                border-radius: 10px
-                padding: 20px 30px 30px
-                img
-                    width: 50px
-                h3
-                    font-size: 24px
-                    padding-bottom: 15px
-                p
-                    color: $black
-
-.home-secG
-    .heading
-        p
-            max-width: 455px
-            margin: 0 auto
-
-.home-secH
-    .call-to-action
-        display: grid
-        grid-template-columns: repeat(2, 1fr)
-        grid-gap: 3px
-        @include media(768) 
-            grid-template-columns: repeat(1, 1fr)
-        .item-md
-            &::before
-                background: linear-gradient(270deg, rgba(0, 0, 0, 0) 29%, rgba(0, 0, 0, 0.849) 100%)
-            &:hover
-                figure
-                    img
-                        transform: scale(1.2)
-            figure
-                width: 100%
-                overflow: hidden
-                img
-                    transition: .5s ease
-            figcaption
-                padding-left: 30px
-                @include media(540)     
-                    padding-left: 20px
-                h3
-                    font-size: 36px
-                    color: $white
-                    @include media(991)   
-                        font-size: 30px
-                    @include media(540)     
-                        font-size: 22px
-                p
-                    font-size: 16px
-                    font-family: $ttrg-bd
-                    color: $white
-                    margin-bottom: 20px 
-                    @include media(540)     
-                        font-size: 14px 
-
+            
 .heading
     h2
         font-weight: 700
