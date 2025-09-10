@@ -2070,4 +2070,9 @@ button {
     opacity: 0.5;
     transform: scale(0.8);
   }
+}
+.sticky {
+  position: sticky;
+  top: 80px;
+  z-index: -1;
 }/*# sourceMappingURL=global.css.map */

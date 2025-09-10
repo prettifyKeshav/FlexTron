@@ -22,7 +22,7 @@ export default function Banner({
                     </video>
                 </figure>
                 <div className="banner-wrapper">
-                    <div className="container">
+                    <div className="container-fluid">
                         <div className="heading" data-animate="fade-up">
                             {h1tag && <h1>{h1tag}</h1>}
                             {h2tag && <h2>{h2tag}</h2>}

@@ -1,15 +1,13 @@
-"user-client";
-export default function ServiceDetail(){
+import React from 'react'
+
+import ServiceDetailPage from '@/components/pages/ServiceDetailPage'
+
+const ServiceDetail = () => {
     return (
         <>
-            <h1>ServiceDetail page </h1>
-            <h1>ServiceDetail page </h1>
-            <h1>ServiceDetail page </h1>
-            <h1>ServiceDetail page </h1>
-            <h1>ServiceDetail page </h1>
-            <h1>ServiceDetail page </h1>
-            <h1>ServiceDetail page </h1>
-            <h1>ServiceDetail page </h1>
+            <ServiceDetailPage />
         </>
     )
 }
+
+export default ServiceDetail

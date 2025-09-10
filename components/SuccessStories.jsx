@@ -112,8 +112,6 @@ export default function SuccessStories() {
                     </div>
                 </div>
             </Swiper>
-
-
         </div>
     );
 }

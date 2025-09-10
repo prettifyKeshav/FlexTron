@@ -74,11 +74,8 @@
           mask-repeat: no-repeat;
   aspect-ratio: 1.22;
   line-height: 0;
-<<<<<<< HEAD
   background: white;
   transitionc: 1s ease-in-out;
-=======
->>>>>>> 5be8f39e2892c6b380272795dfeb20ea02510594
 }
 @media only screen and (max-width: 540px) {
   .banner.home-banner .bg .bg-video .x-vector-icon {
@@ -87,16 +84,12 @@
   }
 }
 .banner.home-banner .bg .bg-video .x-vector-icon video {
-<<<<<<< HEAD
   opacity: 0;
-=======
->>>>>>> 5be8f39e2892c6b380272795dfeb20ea02510594
   opacity: 1;
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-<<<<<<< HEAD
   mix-blend-mode: luminosity;
   transition: 1s ease-in-out;
 }
@@ -153,16 +146,16 @@
   rotate: 90deg;
   pointer-events: none;
   z-index: -1;
-=======
->>>>>>> 5be8f39e2892c6b380272795dfeb20ea02510594
 }
 .banner.home-banner .banner-wrapper {
-  bottom: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  height: 100%;
+  top: 10%;
 }
-@media only screen and (max-width: 540px) {
-  .banner.home-banner .banner-wrapper {
-    bottom: 25%;
-  }
+.banner.home-banner .banner-wrapper .container-fluid {
+  margin: inherit;
 }
 .banner.home-banner .banner-wrapper .heading {
   max-width: 428px;
@@ -551,6 +544,7 @@
   font-size: 14px;
   color: var(--text);
   line-height: 22px;
+  margin-bottom: 30px;
 }
 .home-secD .content .bottom-btn {
   text-align: center;
@@ -561,7 +555,6 @@
 }
 .home-secD .content .bottom-btn span {
   margin: auto;
-  margin-top: 30px;
   font-size: 14px;
   text-transform: uppercase;
   color: #3107CA;

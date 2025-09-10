@@ -23,14 +23,14 @@ export default function Header() {
                             <a href="/services" aria-haspopup="true" aria-expanded="false">Services</a>
                             <div className="dropdown-menu dropdown-menu-single" role="menu">
                                 <ul>
-                                    <li><Link href="/sector-details">Advanced SMT PCB Assembly</Link></li>
-                                    <li><Link href="/sector-details">Design for Manufacturing</Link></li>
-                                    <li><Link href="/sector-details">Engineering and Design</Link></li>
-                                    <li><Link href="/sector-details">Quick Turn Assembly Services</Link></li>
-                                    <li><Link href="/sector-details">Mixed Technology Assembly</Link></li>
-                                    <li><Link href="/sector-details">Buildings – Architecture</Link></li>
-                                    <li><Link href="/sector-details">Assurance of Absolute Quality</Link></li>
-                                    <li><Link href="/sector-details">One-Stop Source for All Services</Link></li>
+                                    <li><Link href="/service-detail">Advanced SMT PCB Assembly</Link></li>
+                                    <li><Link href="/service-detail">Design for Manufacturing</Link></li>
+                                    <li><Link href="/service-detail">Engineering and Design</Link></li>
+                                    <li><Link href="/service-detail">Quick Turn Assembly Services</Link></li>
+                                    <li><Link href="/service-detail">Mixed Technology Assembly</Link></li>
+                                    <li><Link href="/service-detail">Buildings – Architecture</Link></li>
+                                    <li><Link href="/service-detail">Assurance of Absolute Quality</Link></li>
+                                    <li><Link href="/service-detail">One-Stop Source for All Services</Link></li>
                                 </ul>
                             </div>
                         </li>

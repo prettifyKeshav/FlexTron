@@ -1,14 +1,11 @@
 "user-client";
-import Banner from "@/components/Banner";
 
+import ServicePage from "@/components/pages/ServicePage";
 
-export default function ServicesPage() {
+export default function Service() {
     return (
         <>
-            <Banner
-                videoSrc={"/assets/video/home-sec-b-banner.mp4"}
-            />
-
+            <ServicePage />
         </>
     )
 }

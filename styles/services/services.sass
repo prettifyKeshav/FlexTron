@@ -1,108 +1,294 @@
+
 @import '../_var'
-section.border-sec
-    @include media(991) 
-        padding-left: 40px
+
+.banner
+    overflow: hidden
+    &::before
+        background: linear-gradient(270deg, rgba(0, 0, 0, 0) 26.44%, rgba(0, 0, 0, 0.55) 100%) !important
+    figure
+        height: 100%
+    .banner-wrapper
+        bottom: 30%
+        .heading
+            max-width: 632px
+            h1
+                font-weight: 700
+                font-size: 48px
+                line-height: 55px
+                text-transform: uppercase
+                color: $white
+                margin-bottom: 10px
+            p
+                font-weight: 500
+                font-size: 16px
+                line-height: 24px
+                color: #FFFFFFB2
+
+.service-secA
+    overflow: hidden
+    background: #F2F2F2
     @include media(540)
-        padding-left: 25px
-    .container
-        --container: 1200px
-        border-left: 2px dotted #666
-        @include media(1024) 
-            --container: 900px
-        // @include media(991) 
-        //     border-left: none
-        .services-secA
-            padding-top: 70px
-            @include media(991) 
-                padding-top: 60px
-            @include media(768)
-                padding-top: 50px 
+        padding: 50px 0
+    .heading
+        h2
+            font-size: 48px
+            font-weight: 700
             @include media(540)
-                padding-top: 40px 
-            .heading
-                text-align: center
-                p  
-                    max-width: 764px
-                    margin: 0 auto
-                    color: $black
-        .services-secB
-            .step-count
-                padding: 70px 0
-                width: 100%
-                margin-left: -25px
-                @include media(1024) 
-                    padding: 0 0 70px
-                    margin-left: -50px
-                @include media(768)
-                    padding: 0 0 60px
-                    margin-left: -35px
-                @include media(540)
-                    padding: 0 0 30px 
-                .heading
-                    display: flex
-                    gap: 20px
+                font-size: 40px
+    .flex-box
+        &:nth-child(odd)
+            background: #F2F2F2
+        &:nth-child(even)
+            background: $white
+            .container
+                &::before
+                    background: #EFEFEF80
+                    transform: none
+
+        &:nth-child(odd) .container
+            flex-direction: row
+            max-width: 1280px
+            width: 100%
+            margin: 0 auto
+            &::before
+                left: auto
+                right: 0
+                // top: 60%
+                bottom: 0 !important
+                transform: none
+                top: auto
+            @include media(768)
+                flex-direction: column
+                gap: 40px
+                padding: 50px 20px 0px 20px 
+            @include media(540)
+                padding: 30px 0 0 0
+        &:nth-child(even) .container
+            flex-direction: row-reverse
+            max-width: 1280px
+            width: 100%
+            margin: 0 auto
+            top: 60%
+            @include media(768)
+                flex-direction: column
+                gap: 40px
+                padding: 50px 20px 0px 20px 
+            @include media(540)
+                padding: 30px 0 0 0
+        .container
+            padding: 100px 20px
+            display: flex
+            justify-content: center
+            gap: 90px
+            position: relative
+            overflow: hidden
+            align-items: center
+            &::before
+                content: ""
+                position: absolute
+                width: 364px
+                height: 300px
+                // width: 26%
+                // height: 100%
+                left: 0
+                top: 50%
+                transform: translateY(-50%)
+                // background: url(/assets/images/services/service-bg.png)
+                background-size: contain
+                background-repeat: no-repeat
+
+                mask-image: url(/assets/images/services/service-bg.png)
+                mask-size: 100%
+                mask-repeat: no-repeat
+                aspect-ratio: 1.22
+                line-height: 0
+                background: white
+                transitionc: 1s ease-in-out
+            .flex-box-item:first-child
+                figure
+                    width: 582px
+                    height: 387px
+                    border-radius: 15px
+                    @include media(1024)
+                        width: auto
+                        height: auto
+                    img
+                        width: 100%
+                        height: 100%
+                        object-fit: cover
+                        border-radius: 15px
+                        overflow: hidden
+                        z-index: 1
+                        position: relative
+                        // box-shadow: 13px 13px 0px 0px #0FD0D940
+            .flex-box-item:last-child
+                position: relative
+                @include media(1024)
+                    width: 60%
+                @include media(991)
+                    width: 100%
+                    text-align: center
+                h3
+                    color: #3F24A2
+                    margin-bottom: 40px
+                    max-width: 80%
+                    font-weight: 600
+                    font-size: 36px
+                    line-height: 36px
+                    position: relative
+                    @include media(1024)
+                        max-width: 100%
                     @include media(540)
-                        gap: 10px
-                    span
+                        font-size: 25px
+                        line-height: 1.1
+                    &::before
+                        content: ""
+                        bottom: -10px
+                        left: 0%
+                        position: absolute
+                        height: 5px
+                        width: 50px
+                        background: #FFA319
+                p
+                    max-width: 80%
+                    color: $text
+                    font-weight: 400
+                    font-size: 14px
+                    line-height: 20px
+                    @include media(1024)
+                        max-width: 100%
+                    @include media(540)
+                        font-size: 14px
+                .btn2
+                    margin-top: 40px
+                    a
+                        background: #3107CA
+                        padding: 8px 35px
+                        color: $white
+                        border-radius: 25px
                         display: inline-block
-                        padding: 8px 
-                        color: $black
-                        font-size: 24px
-                        line-height: 1.2
-                        font-family: $ttrg-bd
-                        border: 2px dotted $black
-                        border-radius: 50%
-                        background: $white
-                        @include media(540)
-                            font-size: 16px
-                    h6
-                        font-size: 24px
-                        line-height: 1.2
-                        font-family: $ttrg-bd
-                        color: $black
-                        @include media(540)
-                            font-size: 20px
-                .step-details
-                    padding-left: 70px
-                    gap: 50px
-                    @include media(1024) 
-                        gap: 20px
-                    @include media(991) 
-                        flex-direction: column
-                        align-items: start
-                    @include media(540)
-                        padding-left: 48px
-                    .colA
-                        img
-                            width: 100%
-                            object-fit: cover
-                    .colB
-                        ul
-                            padding-left: 25px
-                            @include media(540)
-                                padding-left: 10px
-                            li
-                                position: relative
-                                padding-bottom: 5px
-                                color: $black
-                                &::before
-                                    content: ""
-                                    position: absolute
-                                    left: -20px
-                                    bottom: 12px
-                                    width: 10px
-                                    height: 10px
-                                    background-color: var(--primary)
-                                    border-radius: 50%
-                                    @include media(540)
-                                        width: 7px
-                                        height: 7px
-                        .btn-wrapper
-                            margin-top: 50px
-                            display: flex
-                            align-items: center
-                            gap: 20px
-                            @include media(540)
-                                margin-top: 20px
-                                gap: 10px
-                    
+                        text-transform: uppercase
+                        &:hover
+                            color: white
+
+.service-detail-secA
+    .banner
+        overflow: hidden
+        position: relative
+        &::before
+            background: linear-gradient(90deg, rgba(60, 24, 198, 0.5) 22.12%, #D3CEE6 96.63%) !important
+            content: ""
+            position: absolute
+            top: 0
+            left: 0
+            right: 0
+            bottom: 0
+            z-index: 0
+            pointer-events: none
+        &::after
+            background: linear-gradient(270deg, rgb(223 215 255 / 50%) 25.48%, #3107CA 100%)
+            content: ""
+            position: absolute
+            top: 0
+            left: 0
+            right: 0
+            bottom: 0
+            z-index: 0
+            pointer-events: none
+        .banner-wrapper
+            display: flex 
+            flex-direction: column
+            align-items: start
+            justify-content: center
+            height: 100%
+            bottom: 0
+            .container-fluid
+                margin: inherit
+        .banner-image
+            position: absolute 
+            right: 8% 
+            bottom: 0 
+            width: 35%
+
+.service-detail-secB
+    height: 100vh
+    overflow: hidden
+    img
+        height: 100%
+        width: 100%
+        object-fit: cover
+    
+.service-detail-secC
+    background: $white
+    padding: 70px 0 
+    .flex-box
+        display: flex
+        justify-content: space-between
+        gap: 70px
+        .col:first-child
+            width: 100%
+            max-width: 65%
+            p
+                padding: 0 0 20px 0
+                color: $text
+                font-weight: 400
+                font-size: 15px
+                line-height: 24px
+                text-align: justify
+
+        .col:last-child
+            width: 100%
+            max-width: 35%
+            .form-sec
+                box-shadow: 0px 2px 8px 0px #63636333
+                width: 100%
+                border-radius: 10px
+                padding: 30px 30px 50px 30px
+                h4
+                    font-weight: 700
+                    font-size: 28px
+                    line-height: 40px
+                    color: #3F24A2
+                    text-align: center
+                    margin-bottom: 30px
+                .form
+                    button
+                        background: #FFA319
+                        padding: 22px 16px
+                        color: $white
+
+.service-detail-secD
+    position: relative
+    background: $white
+    .heading
+        text-align: center
+        h2
+            font-weight: 700
+            font-size: 36px
+            text-transform: uppercase
+            color: $primary
+        p
+            font-size: 36px
+            line-height: 1.2
+            font-weight: 400
+            color: #000
+            max-width: 630px
+            margin: 0 auto
+            @include media(768)
+                font-size: 30px
+            @include media(540)
+                font-size: 20px
+    .services-container
+        width: 100%
+        padding: 70px 0 20px
+        display: flex
+        gap: 70px
+        @include media(991)
+            gap: 30px
+        @include media(768)
+            padding: 50px 0 20px
+            gap: 20px
+        @include media(540)
+            flex-direction: column
+            gap: 30px
+            padding: 20px 0 

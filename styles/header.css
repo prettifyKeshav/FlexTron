@@ -2070,6 +2070,12 @@ button {
     transform: scale(0.8);
   }
 }
+.sticky {
+  position: sticky;
+  top: 80px;
+  z-index: -1;
+}
+
 header {
   position: fixed;
   top: 0;
@@ -2644,6 +2650,9 @@ footer .bottom-footer .bg .banner-wrapper {
 }
 footer .bottom-footer .bg figure {
   height: 100%;
+}
+footer .bottom-footer .banner {
+  overflow: visible;
 }
 footer .bottom-footer .banner::before {
   background: none;
