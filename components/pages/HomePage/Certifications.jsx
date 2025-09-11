@@ -1,3 +1,5 @@
+"use client"
+
 import React from 'react'
 import CustomSlider from '@/components/CustomSlider'
 import Link from 'next/link'

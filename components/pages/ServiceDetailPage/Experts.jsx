@@ -1,3 +1,6 @@
+
+"use client"
+
 import React from 'react'
 import EnquireForm from '@/components/EnquireForm'
 
@@ -15,7 +18,7 @@ const Experts = () => {
                             <div className="form-sec">
                                 <h4>Talk to Our Experts</h4>
                                 <EnquireForm
-                                    className="contact-form "
+                                    className="contact-form"
                                     buttonType="solid-white"/>
                             </div>
                         </div>

@@ -1,0 +1,143 @@
+@import '../_var'
+
+.contact-secA
+    background: linear-gradient(90deg, rgb(59, 24, 198) 22.12%, #D3CEE6 96.63%)
+    padding: 200px 50px 100px 50px
+    position: relative
+    overflow: hidden
+    &::before
+        content: ""
+        position: absolute
+        width: 364px
+        height: 300px
+        right: -5%
+        bottom: 0
+        background-size: contain
+        background-repeat: no-repeat
+
+        mask-image: url(/assets/images/services/service-bg.png)
+        mask-size: 100%
+        mask-repeat: no-repeat
+        aspect-ratio: 1.22
+        line-height: 0
+        background: #FFFFFF80
+        transitionc: 1s ease-in-out 
+    .heading
+        h1
+            font-weight: 700
+            font-size: 48px
+            line-height: 55px
+            text-transform: uppercase
+            color: $white
+        p
+            font-weight: 500
+            font-size: 16px
+            line-height: 24px
+            color: #FFFFFFB2
+    .grid-box
+        display: flex
+        gap: 20px
+        padding: 50px 0 40px 0
+        .col
+            background: $white
+            width: 284px
+            height: 174px
+            border-radius: 10px
+            padding: 20px
+            .head
+                display: flex
+                justify-content: space-between
+                align-items: center
+                padding-bottom: 10px
+                h6
+                    font-weight: 600
+                    font-size: 18px
+                    line-height: 24px
+                    color: #3107CA
+                img
+                    width: 34px
+                    height: 34px
+                    object-fit: contain
+        .col:nth-child(1)
+            p
+                font-weight: 400
+                font-size: 16px
+                line-height: 24px
+                color: $text
+        .col:nth-child(2)
+            a
+                margin-bottom: 7px
+                display: inline-block
+                span
+                    display: block
+                    font-weight: 400
+                    font-size: 16px
+                    line-height: 24px
+                    color: $text
+                    transition: 0.5s ease
+                    &:hover
+                        color: $primary
+        .col:nth-child(3)
+            a
+                display: block
+                color: $text
+                font-weight: 400
+                font-size: 16px
+                line-height: 24px
+                margin-bottom: 7px
+                transition: 0.5s ease
+                &:hover
+                    color: $primary
+    .bottom-btn
+        a
+            font-weight: 600
+            font-size: 14px
+            line-height: 10px
+            text-align: center
+            text-transform: uppercase
+            color: $white
+            background: #FFA319
+
+            border-radius: 25px
+            padding: 16px 24px
+            display: inline-block
+
+.contact-secB
+    height: 100vh
+    overflow: hidden
+    figure
+        height: 100%
+        line-height: 0
+        video
+            height: 100%
+            width: 100%
+            object-fit: cover
+.contact-secC
+    background: $white
+    padding: 70px 0
+    .heading
+        max-width: 370px
+        margin: auto
+        h2
+            font-weight: 700
+            font-size: 36px
+            line-height: 40px
+            text-align: center
+            color: #3F24A2
+    .form
+        max-width: 40%
+        margin: 50px auto
+        .submit-btn
+            text-align: center
+            margin-top: 20px
+            button
+                border-radius: 25px
+                padding: 8px 40px
+                background: #FFA319
+                color: $white
+                display: inline-block
+
+.contact-secD
+    line-height: 0
+    iframe
+        border: 0

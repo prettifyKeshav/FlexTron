@@ -36,15 +36,15 @@ export default function Header() {
                         </li>
 
                         <li className="hasDropdown">
-                            <a href="#" aria-haspopup="true" aria-expanded="false">Industries</a>
+                            <a href="/industries" aria-haspopup="true" aria-expanded="false">Industries</a>
                             <div className="dropdown-menu dropdown-menu-single" role="menu">
                                 <ul>
-                                    <li><Link href="/">Military / Aerospace Industry</Link></li>
-                                    <li><Link href="/">Medical / Hospital Industry</Link></li>
-                                    <li><Link href="/">Lighting Industry</Link></li>
-                                    <li><Link href="/">Industrial / Commercial Equipment</Link></li>
-                                    <li><Link href="/">Utility &amp; Telecommunication Industry</Link></li>
-                                    <li><Link href="/">Wireless and IoT Industry</Link></li>
+                                    <li><Link href="/industries-detail">Military / Aerospace Industry</Link></li>
+                                    <li><Link href="/industries-detail">Medical / Hospital Industry</Link></li>
+                                    <li><Link href="/industries-detail">Lighting Industry</Link></li>
+                                    <li><Link href="/industries-detail">Industrial / Commercial Equipment</Link></li>
+                                    <li><Link href="/industries-detail">Utility &amp; Telecommunication Industry</Link></li>
+                                    <li><Link href="/industries-detail">Wireless and IoT Industry</Link></li>
                                 </ul>
                             </div>
                         </li>

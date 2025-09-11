@@ -107,36 +107,4 @@
   width: -moz-fit-content;
   width: fit-content;
   display: inline-block;
-}
-
-.related-slider {
-  margin-top: 40px;
-}
-.related-slider .swiper-nav {
-  display: flex;
-  align-items: center;
-  justify-content: end;
-  gap: 10px;
-  position: absolute;
-  right: 3%;
-  top: 3%;
-}
-@media only screen and (max-width: 540px) {
-  .related-slider .swiper-nav {
-    display: none;
-  }
-}
-.related-slider .swiper-nav button {
-  background: var(--white);
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  border: 1px solid var(--black);
-}
-.related-slider .swiper-nav button.swiper-button-disabled {
-  opacity: 0.4;
-  cursor: no-drop;
-}
-.related-slider .swiper-nav button svg {
-  vertical-align: middle;
 }/*# sourceMappingURL=serviceslider.css.map */

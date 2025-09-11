@@ -315,6 +315,51 @@
   line-height: 24px;
   text-align: justify;
 }
+.service-detail-secC .flex-box .col:first-child h2 {
+  font-weight: 600;
+  font-size: 25px;
+  color: black;
+  margin: 40px 0 10px 0;
+}
+.service-detail-secC .flex-box .col:first-child h3 {
+  font-weight: 600;
+  font-size: 18px;
+  color: black;
+  margin: 40px 0 10px 0;
+}
+.service-detail-secC .flex-box .col:first-child h4 {
+  font-weight: 600;
+  font-size: 16px;
+  color: black;
+  margin: 40px 0 10px 0;
+}
+.service-detail-secC .flex-box .col:first-child h5 {
+  font-weight: 600;
+  font-size: 14px;
+  color: black;
+  margin: 40px 0 10px 0;
+}
+.service-detail-secC .flex-box .col:first-child ul {
+  margin-bottom: 20px;
+  margin-left: 10px;
+}
+.service-detail-secC .flex-box .col:first-child ul li {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 10px;
+  color: var(--text);
+}
+.service-detail-secC .flex-box .col:first-child ul li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 12px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: var(--primary);
+  transform: translateY(-50%);
+}
 .service-detail-secC .flex-box .col:last-child {
   width: 100%;
   max-width: 35%;
