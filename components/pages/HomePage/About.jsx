@@ -19,7 +19,7 @@ const About = () => {
                         <div className="bg">
                             <figure>
                                 <video playsInline autoPlay muted loop width="100%" height="100%">
-                                    <source src="/assets/video/home-sec-b-banner.mp4" type="video/mp4" />
+                                    <source src="assets/video/home-sec-b-banner.mp4" type="video/mp4" />
                                 </video>
                             </figure>
                             <div className="banner-wrapper">
@@ -32,7 +32,7 @@ const About = () => {
                                         </Link>
                                     </div>
                                     <div className="right-wrapper">
-                                        <Image src="/assets/logo-white.svg" width={37} height={37} alt="Flextron white logo"></Image>
+                                        <Image src="assets/logo-white.svg" width={37} height={37} alt="Flextron white logo"></Image>
                                         <div className="year">
                                             <span>20+ Years</span>
                                             <p>Years of Excellence</p>
@@ -47,13 +47,13 @@ const About = () => {
                     </div>
 
                     {/* <Banner
-                        videoSrc="/assets/video/home-sec-b-banner.mp4"
+                        videoSrc="assets/video/home-sec-b-banner.mp4"
                         h3tag="Flextron Circuit Assembly"
                         description="Are you building a product that requires a reliable, high quality electronic circuit assembly or box-build? If so, Flextron is your one-stop source for product realization, build, test, and ultimate success. We’re specialists in rigid and flexible Printed Circuit Board Assemblies (PCBAs) of all types and technologies"
                         buttonText="Read More"
                         buttonLink="/about"
                         imageAlt="x-icon"
-                        imageSrc="/assets/logo-white.svg"
+                        imageSrc="assets/logo-white.svg"
                     /> */}
                 </div>
             </section>

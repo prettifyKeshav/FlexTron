@@ -15,20 +15,18 @@ export default function CustomSlider({
     slidesPerView = 3,
     space = 20,
     breakpoints = {},
-    autoplay = false, // 👈 new prop
-    loop = false,     // 👈 new prop
-    showContent = true, // 👈 hide/show text under image
+    autoplay = false,
+    loop = false,
+    showContent = true,
 }) {
     const swiperRef = useRef(null);
 
-    // unique IDs for navigation buttons
     const id = useId();
     const prevBtnClass = `slider-prev-${id}`;
     const nextBtnClass = `slider-next-${id}`;
 
     return (
         <div className="custom-slider">
-            {/* Show nav buttons only if autoplay is off */}
             {!autoplay && (
                 <div className="swiper-nav slider-nav">
                     <button className={prevBtnClass}>
@@ -84,7 +82,7 @@ export default function CustomSlider({
                                         <h5>{item.title}</h5>
                                         <p>{item.description}</p>
                                         {item.buttonText && (
-                                            <Link href={item.link || "#"}>
+                                            <Link href={item.link || "/"}>
                                                 <button>
                                                     <span>{item.buttonText}</span>
                                                 </button>

@@ -15,7 +15,7 @@ const Hero = () => {
           <div className="col">
             <div className="head">
               <h6>Address</h6>
-              <Image src="/assets/images/contact-us/1.svg" height={34} width={34} alt="ico" ></Image>
+              <Image src="assets/images/contact-us/1.svg" height={34} width={34} alt="ico" ></Image>
             </div>
             <p>Flextron Circuit Assembly 300 Bauman Ct.   Wood Dale, IL 60191</p>
           </div>
@@ -23,7 +23,7 @@ const Hero = () => {
           <div className="col">
             <div className="head">
               <h6>Phone</h6>
-              <Image src="/assets/images/contact-us/2.svg" height={34} width={34} alt="ico" ></Image>
+              <Image src="assets/images/contact-us/2.svg" height={34} width={34} alt="ico" ></Image>
             </div>
             <Link href="tel:6307661000"><span>Tel: (630) 766-1000</span></Link>
             <Link href="tel:6307661006"><span>Fax: (630) 766-1006</span></Link>
@@ -31,7 +31,7 @@ const Hero = () => {
           <div className="col">
             <div className="head">
               <h6>Email</h6>
-              <Image src="/assets/images/contact-us/3.svg" height={34} width={34} alt="ico" ></Image>
+              <Image src="assets/images/contact-us/3.svg" height={34} width={34} alt="ico" ></Image>
             </div>
             <Link href="mailto:sales@flextronassembly.com">sales@flextronassembly.com</Link>
             <Link href="mailto:info@flextronassembly.com">info@flextronassembly.com</Link>

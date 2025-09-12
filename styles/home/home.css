@@ -75,23 +75,18 @@
   aspect-ratio: 1.22;
   line-height: 0;
   background: white;
-  transitionc: 1s ease-in-out;
-}
-@media only screen and (max-width: 540px) {
-  .banner.home-banner .bg .bg-video .x-vector-icon {
-    -webkit-mask-size: 80%;
-            mask-size: 80%;
-  }
+  transition: all 1.5s ease-in-out;
 }
 .banner.home-banner .bg .bg-video .x-vector-icon video {
-  opacity: 0;
-  opacity: 1;
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   mix-blend-mode: luminosity;
-  transition: 1s ease-in-out;
+}
+.banner.home-banner .bg .bg-video .x-vector-icon.fade-in video {
+  opacity: 100%;
+  transition: opacity 1s ease-in-out;
 }
 .banner.home-banner .swiper {
   position: absolute;
@@ -152,15 +147,29 @@
   align-items: center;
   justify-content: start;
   height: 100%;
-  top: 10%;
+  top: -10%;
 }
 .banner.home-banner .banner-wrapper .container-fluid {
   margin: inherit;
 }
-.banner.home-banner .banner-wrapper .heading {
-  max-width: 428px;
+.banner.home-banner .banner-wrapper .heading-wrapper {
+  position: relative;
 }
-.banner.home-banner .banner-wrapper .heading h1 {
+.banner.home-banner .banner-wrapper .heading-wrapper .heading {
+  width: 1028px;
+  max-width: 728px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: 1s ease-in-out;
+  opacity: 0;
+  transform: translateX(-100%);
+}
+.banner.home-banner .banner-wrapper .heading-wrapper .heading.active {
+  opacity: 1;
+  transform: translateX(0%);
+}
+.banner.home-banner .banner-wrapper .heading-wrapper .heading h1 {
   font-weight: 700;
   font-size: 64px;
   line-height: 64px;
@@ -168,60 +177,61 @@
   color: #fff;
   padding-bottom: 10px;
 }
-.banner.home-banner .banner-wrapper .heading h2 {
+.banner.home-banner .banner-wrapper .heading-wrapper .heading h2 {
   font-family: Poppins;
   font-weight: 500;
   font-size: 24px;
   color: #fff;
 }
 @media only screen and (max-width: 991px) {
-  .banner.home-banner .banner-wrapper .heading h2 {
+  .banner.home-banner .banner-wrapper .heading-wrapper .heading h2 {
     font-size: 80px;
   }
 }
 @media only screen and (max-width: 768px) {
-  .banner.home-banner .banner-wrapper .heading h2 {
+  .banner.home-banner .banner-wrapper .heading-wrapper .heading h2 {
     font-size: 60px;
     margin-bottom: 15px;
   }
 }
 @media only screen and (max-width: 540px) {
-  .banner.home-banner .banner-wrapper .heading h2 {
+  .banner.home-banner .banner-wrapper .heading-wrapper .heading h2 {
     font-size: 30px;
     margin-bottom: 10px;
   }
 }
-.banner.home-banner .banner-wrapper .heading h2:nth-child(2) {
+.banner.home-banner .banner-wrapper .heading-wrapper .heading h2:nth-child(2) {
   text-align: center;
 }
-.banner.home-banner .banner-wrapper .heading h2:last-child {
+.banner.home-banner .banner-wrapper .heading-wrapper .heading h2:last-child {
   text-align: end;
 }
-.banner.home-banner .banner-wrapper .heading p {
+.banner.home-banner .banner-wrapper .heading-wrapper .heading p {
   font-weight: 500;
   color: var(--white);
   font-size: 14px;
+  max-width: 428px;
 }
-.banner.home-banner .banner-wrapper .heading .text-slider {
+.banner.home-banner .banner-wrapper .heading-wrapper .heading .text-slider {
   height: 108px;
 }
 @media only screen and (max-width: 768px) {
-  .banner.home-banner .banner-wrapper .heading .text-slider {
+  .banner.home-banner .banner-wrapper .heading-wrapper .heading .text-slider {
     height: 80px;
   }
 }
 @media only screen and (max-width: 540px) {
-  .banner.home-banner .banner-wrapper .heading .text-slider {
+  .banner.home-banner .banner-wrapper .heading-wrapper .heading .text-slider {
     height: 40px;
   }
 }
-.banner.home-banner .banner-wrapper .heading .text-slider .swiper {
+.banner.home-banner .banner-wrapper .heading-wrapper .heading .text-slider .swiper {
   height: 100%;
 }
-.banner.home-banner .banner-wrapper .heading .text-slider h2 {
+.banner.home-banner .banner-wrapper .heading-wrapper .heading .text-slider h2 {
   text-align: center;
 }
-.banner.home-banner .banner-wrapper .heading .text-slider .swiper-wrapper {
+.banner.home-banner .banner-wrapper .heading-wrapper .heading .text-slider .swiper-wrapper {
   flex-direction: column;
 }
 
@@ -603,4 +613,8 @@
   font-size: 36px;
   text-transform: uppercase;
   color: var(--primary);
+}
+
+.displaynone {
+  display: none;
 }/*# sourceMappingURL=home.css.map */

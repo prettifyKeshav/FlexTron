@@ -13,7 +13,7 @@ export default function Header() {
             <div className="header-wrapper">
                 <div className="colA">
                     <Link href="/" className="logo">
-                        <Image src="/assets/logo.svg" width="204" height="25" alt="Flextron logo"></Image>
+                        <Image src="assets/logo.svg" width="204" height="25" alt="Flextron logo"></Image>
                     </Link>
                 </div>
                 <div className="colB">
@@ -54,7 +54,7 @@ export default function Header() {
                 </div>
                 <div className="colC">
                     <ul className="nav-b">
-                        {/* <li><Link href="#"><Image className="svg" alt="icon" width={25} height={25} src="/assets/icon/world.svg"/>16+ Countries</Link></li> */}
+                        {/* <li><Link href="#"><Image className="svg" alt="icon" width={25} height={25} src="assets/icon/world.svg"/>16+ Countries</Link></li> */}
                         <li><Link href="telto:+6307661000"> (630) 766-1000</Link></li>
                         
                         <li>

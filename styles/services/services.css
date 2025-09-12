@@ -21,7 +21,15 @@
   height: 100%;
 }
 .banner .banner-wrapper {
-  bottom: 30%;
+  bottom: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+}
+.banner .banner-wrapper .container-fluid {
+  margin: inherit;
 }
 .banner .banner-wrapper .heading {
   max-width: 632px;

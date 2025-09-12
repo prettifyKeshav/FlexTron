@@ -21,8 +21,8 @@ export default function ServiceSlider() {
                 </div>
                 <div className="service-slider">
                     <div className="swiper-nav service-nav">
-                        <button className="service-prev"><Image src="/assets/icon/swiper-nav-left.svg" width={37} height={37} alt="swiper icon"></Image></button>
-                        <button className="service-next"><Image src="/assets/icon/swiper-nav-right.svg" width={37} height={37} alt="swiper icon"></Image></button>
+                        <button className="service-prev"><Image src="assets/icon/swiper-nav-left.svg" width={37} height={37} alt="swiper icon"></Image></button>
+                        <button className="service-next"><Image src="assets/icon/swiper-nav-right.svg" width={37} height={37} alt="swiper icon"></Image></button>
                     </div>
                     <Swiper
                         ref={swiperRef}
@@ -54,7 +54,7 @@ export default function ServiceSlider() {
                             <Link href="#">
                                 <div className="item-md">
                                     <figure>
-                                        <img src="/assets/images/home/service-slider/1.jpg"></img>
+                                        <img src="assets/images/home/service-slider/1.jpg"></img>
                                     </figure>
                                     <figcaption>
                                         <h5>SMT PCB Assembly</h5>
@@ -68,7 +68,7 @@ export default function ServiceSlider() {
                             <Link href="#">
                                 <div className="item-md">
                                     <figure>
-                                        <img src="/assets/images/home/service-slider/2.jpg"></img>
+                                        <img src="assets/images/home/service-slider/2.jpg"></img>
                                     </figure>
                                     <figcaption>
                                         <h5>Design for Manufacturing</h5>
@@ -82,7 +82,7 @@ export default function ServiceSlider() {
                             <Link href="#">
                                 <div className="item-md">
                                     <figure>
-                                        <img src="/assets/images/home/service-slider/3.jpg"></img>
+                                        <img src="assets/images/home/service-slider/3.jpg"></img>
                                     </figure>
                                     <figcaption>
                                         <h5>Engineering and Design</h5>
@@ -96,7 +96,7 @@ export default function ServiceSlider() {
                             <Link href="#">
                                 <div className="item-md">
                                     <figure>
-                                        <img src="/assets/images/home/service-slider/1.jpg"></img>
+                                        <img src="assets/images/home/service-slider/1.jpg"></img>
                                     </figure>
                                     <figcaption>
                                         <h5>SMT PCB Assembly</h5>

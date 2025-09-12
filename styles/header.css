@@ -2070,6 +2070,17 @@ button {
     transform: scale(0.8);
   }
 }
+@keyframes scroll {
+  0% {
+    transform: translateY(10px);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+  100% {
+    transform: translateY(10px);
+  }
+}
 .sticky {
   position: sticky;
   top: 80px;

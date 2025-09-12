@@ -14,7 +14,7 @@ const Industries = () => {
                     <div className="grid-box">
                         <div className="col">
                             <figure>
-                                <img src="/assets/images/home/industries/1.jpg"></img>
+                                <img src="assets/images/home/industries/1.jpg"></img>
                                 <figcaption>
                                     <div className="content">
                                         <h5>Military / Aerospace Industry</h5>
@@ -34,7 +34,7 @@ const Industries = () => {
 
                         <div className="col">
                             <figure>
-                                <img src="/assets/images/home/industries/2.jpg"></img>
+                                <img src="assets/images/home/industries/2.jpg"></img>
                                 <figcaption>
                                     <div className="content">
                                         <h5>Medical / Hospital Industry</h5>
@@ -54,7 +54,7 @@ const Industries = () => {
 
                         <div className="col">
                             <figure>
-                                <img src="/assets/images/home/industries/3.jpg"></img>
+                                <img src="assets/images/home/industries/3.jpg"></img>
                                 <figcaption>
                                     <div className="content">
                                         <h5>Lighting Industry</h5>
@@ -74,7 +74,7 @@ const Industries = () => {
 
                         <div className="col">
                             <figure>
-                                <img src="/assets/images/home/industries/4.jpg"></img>
+                                <img src="assets/images/home/industries/4.jpg"></img>
                                 <figcaption>
                                     <div className="content">
                                         <h5>Industrial Equipment</h5>
@@ -94,7 +94,7 @@ const Industries = () => {
 
                         <div className="col">
                             <figure>
-                                <img src="/assets/images/home/industries/5.jpg"></img>
+                                <img src="assets/images/home/industries/5.jpg"></img>
                                 <figcaption>
                                     <div className="content">
                                         <h5>Telecommunication Industry</h5>
@@ -114,7 +114,7 @@ const Industries = () => {
 
                         <div className="col">
                             <figure>
-                                <img src="/assets/images/home/industries/6.jpg"></img>
+                                <img src="assets/images/home/industries/6.jpg"></img>
                                 <figcaption>
                                     <div className="content">
                                         <h5>Wireless and IoT Industry</h5>

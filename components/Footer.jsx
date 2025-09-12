@@ -11,7 +11,7 @@ export default function Footer() {
             <footer>
                 <div className="main-footer container">
                     <div className="colA">
-                        <Image src='/assets/logo.svg' alt="logo" width={216} height={36} />
+                        <Image src='assets/logo.svg' alt="logo" width={216} height={36} />
 
                         <div className="social-icons">
                             <a href="javascript:;" target="_blank" rel="noopener noreferrer">
@@ -45,11 +45,11 @@ export default function Footer() {
                             <h6>QUICK LINKS</h6>
                             <ul>
                                 <li><Link href="/">Terms & Conditions</Link></li>
-                                <li><Link href="/">About Flextron</Link></li>
+                                <li><Link href="/about-us">About Flextron</Link></li>
                                 <li><Link href="/">Industries</Link></li>
                                 <li><Link href="/">Capabilities</Link></li>
                                 <li><Link href="/">Blogs</Link></li>
-                                <li><Link href="/">Contact Us</Link></li>
+                                <li><Link href="/contact-us">Contact Us</Link></li>
                                 <li><Link href="/">Privacy Policy</Link></li>
                             </ul>
                         </div>
@@ -92,8 +92,8 @@ export default function Footer() {
 
                 <div className="bottom-footer">
                     <Banner
-                        videoSrc="/assets/video/home-bg-banner.mp4"
-                        imageSrc="/assets/footer-x-icon.svg"
+                        videoSrc="assets/video/home-bg-banner.mp4"
+                        imageSrc="assets/footer-x-icon.svg"
                         
                     />
                 </div>
