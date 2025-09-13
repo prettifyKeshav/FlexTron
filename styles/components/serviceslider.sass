@@ -2,8 +2,7 @@
 
 .service-slider
     margin-top: 40px
-    border-top: 1px solid #3107CA
-    border-bottom: 1px solid #3107CA
+    
     .swiper-nav
         display: flex
         align-items: center
@@ -30,6 +29,9 @@
         // button:last-child   
         //     transform: rotate(180deg)
     .swiper-slide
+        // margin-right: 0 !important
+        border-top: 1px solid #3107CA
+        border-bottom: 1px solid #3107CA
         .item-md
             height: 100%
             padding: 20px
@@ -40,6 +42,7 @@
                         scale: 1.04
             figure
                 overflow: hidden
+                border-radius: 0
                 @include media(540) 
                     height: 250px
                 img

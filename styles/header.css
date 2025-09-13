@@ -432,14 +432,15 @@
 }
 
 body::-webkit-scrollbar {
-  width: 10px;
+  width: 7px;
   background: var(--black);
 }
 body::-webkit-scrollbar-track {
   box-shadow: none;
 }
 body::-webkit-scrollbar-thumb {
-  background-color: #ccc;
+  border-radius: 10px;
+  background-color: var(--primary);
 }
 body.overflow-hidden {
   overflow: hidden;
@@ -2296,7 +2297,7 @@ header .header-wrapper ul li.hasDropdown .dropdown-menu ul li a {
   align-items: center;
   gap: 5px;
   color: var(--primary);
-  padding: 10px 14px;
+  padding: 20px 15px;
   border-radius: 5px;
   overflow: hidden;
   font-weight: 400;

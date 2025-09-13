@@ -44,13 +44,13 @@ export default function Footer() {
                         <div className="list">
                             <h6>QUICK LINKS</h6>
                             <ul>
-                                <li><Link href="/">Terms & Conditions</Link></li>
+                                <li><Link href="/terms-conditions">Terms & Conditions</Link></li>
                                 <li><Link href="/about-us">About Flextron</Link></li>
                                 <li><Link href="/">Industries</Link></li>
                                 <li><Link href="/">Capabilities</Link></li>
-                                <li><Link href="/">Blogs</Link></li>
+                                <li><Link href="/blog">Blogs</Link></li>
                                 <li><Link href="/contact-us">Contact Us</Link></li>
-                                <li><Link href="/">Privacy Policy</Link></li>
+                                <li><Link href="/privacy-policy">Privacy Policy</Link></li>
                             </ul>
                         </div>
                         <div className="list">

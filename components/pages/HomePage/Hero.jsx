@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
@@ -7,6 +7,8 @@ import "swiper/css/pagination";
 
 const Hero = () => {
     const [activeIndex, setActiveIndex] = useState(0);
+    const swiperRef = useRef(null);
+
     const slidesData = [
         {
             heading: "Fighter Jet Standards",
@@ -48,14 +50,29 @@ const Hero = () => {
         },
     ];
 
+    const updatePaginationClasses = () => {
+        const bullets = document.querySelectorAll(".swiper-pagination-bullet");
+        bullets.forEach((bullet, index) => {
+            if (index < activeIndex) {
+                bullet.classList.add("fill");
+            } else {
+                bullet.classList.remove("fill");
+            }
+        });
+    };
+
+    useEffect(() => {
+        updatePaginationClasses();
+    }, [activeIndex]);
+
     return (
         <div className="banner home-banner">
             <div className="bg">
                 <figure className="bg-video">
-                    <video playsInline autoPlay muted loop width="100%" height="100%">
+                    <video playsInline autoPlay muted loop width="100%" height="100%" style={{ opacity: '15%' }}>
                         <source src="assets/video/home-bg-banner.mp4" type="video/mp4" />
                     </video>
-                    <div className={`x-vector-icon ${activeIndex >= 0 ? "fade-in" : ""}`}>
+                    <div className="x-vector-icon">
                         <video
                             key={activeIndex}
                             src={slidesData[activeIndex].video}
@@ -86,8 +103,20 @@ const Hero = () => {
             </div>
             <Swiper
                 modules={[Pagination, Autoplay]}
-                pagination={{ clickable: true }}
-                onSlideChange={(swiper) => setActiveIndex(swiper.activeIndex)}
+                pagination={{
+                    clickable: true,
+                    renderBullet: (index, className) => {
+                        const isActive = index < activeIndex ? "fill" : "";
+                        return `<span class="${className} ${isActive}"></span>`;
+                    },
+                }}
+                onSwiper={(swiper) => {
+                    swiperRef.current = swiper;
+                }}
+                onSlideChange={(swiper) => {
+                    setActiveIndex(swiper.activeIndex);
+                    updatePaginationClasses();
+                }}
                 className="mySwiper"
                 autoplay={{ delay: 11000 }}
             >

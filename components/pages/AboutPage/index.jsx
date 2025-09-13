@@ -1,6 +1,6 @@
 import React from 'react'
-import Hero from './Hero'
 import "@/styles/aboutus/aboutus.css"
+import Hero from './Hero'
 import OurMission from './OurMission'
 import OurHistory from './OurHistory'
 import WhyChooseUs from './WhyChooseUs'

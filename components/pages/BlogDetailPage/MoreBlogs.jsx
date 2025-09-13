@@ -10,78 +10,60 @@ import { useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-const MORE_SERVICE = [
+const BLOG_DATA = [
     {
         id: 1,
-        title: "SMT PCB Assembly",
-        description: "One of the most valuable services that an EMS can provide to a customer is engineering and design support.",
-        image: "/assets/images/Services/Service-images/1.jpg",
+        title: "Flextron Announces Full Range of Advanced SMT, Mixed Assembly Services",
+        description: "One of the most valuable services that an EMS can provide to",
+        image: "/assets/images/blogs/blog.jpg",
         href: "#",
         alt: "asdf"
     },
-
     {
         id: 2,
-        title: "SMT PCB Assembly",
-        description: "One of the most valuable services that an EMS can provide to a customer is engineering and design support.",
-        image: "/assets/images/Services/Service-images/2.jpg",
+        title: "Flextron Announces Full Range of Advanced SMT, Mixed Assembly Services",
+        description: "One of the most valuable services that an EMS can provide to",
+        image: "/assets/images/blogs/blog.jpg",
         href: "#",
         alt: "asdf"
     },
     {
         id: 3,
-        title: "SMT PCB Assembly",
-        description: "One of the most valuable services that an EMS can provide to a customer is engineering and design support.",
-        image: "/assets/images/Services/Service-images/3.jpg",
+        title: "Flextron Announces Full Range of Advanced SMT, Mixed Assembly Services",
+        description: "One of the most valuable services that an EMS can provide to",
+        image: "/assets/images/blogs/blog.jpg",
         href: "#",
         alt: "asdf"
     },
     {
         id: 4,
-        title: "SMT PCB Assembly",
-        description: "One of the most valuable services that an EMS can provide to a customer is engineering and design support.",
-        image: "/assets/images/Services/Service-images/4.jpg",
+        title: "Flextron Announces Full Range of Advanced SMT, Mixed Assembly Services",
+        description: "One of the most valuable services that an EMS can provide to",
+        image: "/assets/images/blogs/blog.jpg",
         href: "#",
         alt: "asdf"
     },
     {
         id: 5,
-        title: "SMT PCB Assembly",
-        description: "One of the most valuable services that an EMS can provide to a customer is engineering and design support.",
-        image: "/assets/images/Services/Service-images/5.jpg",
+        title: "Flextron Announces Full Range of Advanced SMT, Mixed Assembly Services",
+        description: "One of the most valuable services that an EMS can provide to",
+        image: "/assets/images/blogs/blog.jpg",
         href: "#",
         alt: "asdf"
-    },
-    {
-        id: 6,
-        title: "SMT PCB Assembly",
-        description: "One of the most valuable services that an EMS can provide to a customer is engineering and design support.",
-        image: "/assets/images/Services/Service-images/6.jpg",
-        href: "#",
-        alt: "asdf"
-    },
-    {
-        id: 7,
-        title: "SMT PCB Assembly",
-        description: "One of the most valuable services that an EMS can provide to a customer is engineering and design support.",
-        image: "/assets/images/Services/Service-images/7.jpg",
-        href: "#",
-        alt: "asdf"
-    },
-
-]
+    }
+];
 
 
-const MoreServices = () => {
+const MoreBlogs = () => {
     const swiperRef = useRef(null);
 
     return (
         <>
             <section>
-                <div className="service-detail-secD sec-pad">
+                <div className="blog-detail-secC sec-pad">
                     <div className="container">
                         <div className="heading">
-                            <h2>More services</h2>
+                            <h2>More Blogs</h2>
                         </div>
                     </div>
                     <div className="service-slider">
@@ -121,7 +103,7 @@ const MoreServices = () => {
                                 swiperRef.current = swiper;
                             }}
                         >
-                            {MORE_SERVICE.map((service) => (
+                            {BLOG_DATA.map((service) => (
                                 <SwiperSlide key={service.id}>
                                     <Link href={service.href} passHref>
                                         <div className="item-md">
@@ -141,7 +123,7 @@ const MoreServices = () => {
                                                 <h5>{service.title}</h5>
                                                 <p>{service.description}</p>
                                                 <button aria-label={`Explore ${service.title}`}>
-                                                    <span>Explore</span>
+                                                    <span>Read More</span>
                                                 </button>
                                             </figcaption>
                                         </div>
@@ -156,4 +138,4 @@ const MoreServices = () => {
     )
 }
 
-export default MoreServices
+export default MoreBlogs

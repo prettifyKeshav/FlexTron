@@ -46,12 +46,24 @@ $scrollwidth: 10px
         --containerfluid: 10px
 body
     &::-webkit-scrollbar
-        width: $scrollwidth
+        width: 7px
         background: $black
     &::-webkit-scrollbar-track
         box-shadow: none
     &::-webkit-scrollbar-thumb
-        background-color: #ccc
+        border-radius: 10px
+        background-color: $primary
+
+
+    
+    // &::-webkit-scrollbar
+    //     width: 2px
+    // &::-webkit-scrollbar-track
+    //     box-shadow: unset
+    //     background: #fff
+    // &::-webkit-scrollbar-thumb
+    //     background-color: $primary
+
     &.overflow-hidden
         overflow: hidden
         margin-right: $scrollwidth

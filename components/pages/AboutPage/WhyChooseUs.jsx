@@ -86,7 +86,7 @@ const WhyChooseUs = () => {
                         <h2>Why Choose Us?</h2>
                     </div>
 
-                    <div className="sucess-slider">
+                    <div className="choose-slider">
                         <Swiper
                             ref={swiperRef}
                             modules={[Navigation, Pagination]}
@@ -94,8 +94,8 @@ const WhyChooseUs = () => {
                             slidesPerView={4}
                             speed={1000}
                             navigation={{
-                                prevEl: ".sucess-prev",
-                                nextEl: ".sucess-next",
+                                prevEl: ".choose-prev",
+                                nextEl: ".choose-next",
                             }}
                             pagination={{
                                 type: "progressbar",
@@ -119,7 +119,7 @@ const WhyChooseUs = () => {
                             <div className="custom-pagination">
                                 <div className="swiper-pagination"></div>
                                 <div className="swiper-nav">
-                                    <button className="sucess-prev">
+                                    <button className="choose-prev">
                                         <svg
                                             xmlns="http://www.w3.org/2000/svg"
                                             width="24"
@@ -136,7 +136,7 @@ const WhyChooseUs = () => {
                                             />
                                         </svg>
                                     </button>
-                                    <button className="sucess-next">
+                                    <button className="choose-next">
                                         <svg
                                             xmlns="http://www.w3.org/2000/svg"
                                             width="24"
