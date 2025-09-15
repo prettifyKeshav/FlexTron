@@ -17,6 +17,16 @@
 .banner::before {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 26.44%, rgba(0, 0, 0, 0.55) 100%) !important;
 }
+@media only screen and (max-width: 1024px) {
+  .banner .bg {
+    height: 80vh;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .banner .bg {
+    height: 70vh;
+  }
+}
 .banner figure {
   height: 100%;
 }
@@ -36,15 +46,16 @@
   color: var(--white);
   margin-bottom: 10px;
 }
+@media only screen and (max-width: 540px) {
+  .banner .banner-wrapper .heading h1 {
+    font-size: 27px;
+    line-height: 1.2;
+  }
+}
 
 .industries-secA {
   overflow: hidden;
   background: #3107CA;
-}
-@media only screen and (max-width: 540px) {
-  .industries-secA {
-    padding: 50px 0;
-  }
 }
 .industries-secA .heading h2 {
   font-size: 48px;
@@ -86,8 +97,19 @@
   transform: none;
   top: auto;
 }
+@media only screen and (max-width: 768px) {
+  .industries-secA .flex-box::before {
+    width: 204px;
+    height: auto;
+  }
+}
 .industries-secA .flex-box .flex-box-item:first-child {
   width: 50%;
+}
+@media only screen and (max-width: 768px) {
+  .industries-secA .flex-box .flex-box-item:first-child {
+    width: 100%;
+  }
 }
 .industries-secA .flex-box .flex-box-item:first-child figure {
   width: 100%;
@@ -106,6 +128,23 @@
   position: relative;
   width: 50%;
   padding: 0 90px;
+}
+@media only screen and (max-width: 1024px) {
+  .industries-secA .flex-box .flex-box-item:last-child {
+    padding: 0 40px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .industries-secA .flex-box .flex-box-item:last-child {
+    width: 100%;
+    padding: 70px 40px 30px 40px;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .industries-secA .flex-box .flex-box-item:last-child {
+    padding: 50px 0px 30px 0px;
+  }
 }
 .industries-secA .flex-box .flex-box-item:last-child h3 {
   color: var(--white);
@@ -172,14 +211,14 @@
 }
 @media only screen and (max-width: 768px) {
   .industries-secA .flex-box:nth-child(odd) {
-    flex-direction: column;
-    gap: 40px;
-    padding: 50px 20px 0px 20px;
+    flex-direction: column-reverse;
+    gap: 0px;
+    padding: 0;
   }
 }
 @media only screen and (max-width: 540px) {
   .industries-secA .flex-box:nth-child(odd) {
-    padding: 30px 0 0 0;
+    padding: 0;
   }
 }
 .industries-secA .flex-box:nth-child(even) {
@@ -190,14 +229,14 @@
 }
 @media only screen and (max-width: 768px) {
   .industries-secA .flex-box:nth-child(even) {
-    flex-direction: column;
-    gap: 40px;
-    padding: 50px 20px 0px 20px;
+    flex-direction: column-reverse;
+    gap: 0px;
+    padding: 0;
   }
 }
 @media only screen and (max-width: 540px) {
   .industries-secA .flex-box:nth-child(even) {
-    padding: 30px 0 0 0;
+    padding: 0;
   }
 }
 

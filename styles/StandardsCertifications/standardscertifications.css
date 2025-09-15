@@ -20,12 +20,38 @@
   max-width: 50%;
   margin: auto;
 }
+@media only screen and (max-width: 768px) {
+  .standards-secA .heading {
+    max-width: 90%;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .standards-secA .heading {
+    max-width: 100%;
+  }
+}
 .standards-secA .heading h1 {
   font-weight: 700;
   font-size: 36px;
   line-height: 64px;
   text-transform: uppercase;
   color: #3F24A2;
+}
+@media only screen and (max-width: 1024px) {
+  .standards-secA .heading h1 {
+    line-height: 1.2;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .standards-secA .heading h1 {
+    margin-bottom: 10px;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .standards-secA .heading h1 {
+    font-size: 27px;
+    line-height: 1.2;
+  }
 }
 .standards-secA .heading p {
   font-weight: 400;
@@ -79,9 +105,24 @@
 .standards-secB .container {
   max-width: 1080px;
 }
+@media only screen and (max-width: 1024px) {
+  .standards-secB .container {
+    max-width: 80%;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .standards-secB .container {
+    max-width: 95%;
+  }
+}
 .standards-secB .container .box {
   border-left: 1px solid #FFFFFF;
   padding: 50px 0 50px 50px;
+}
+@media only screen and (max-width: 540px) {
+  .standards-secB .container .box {
+    padding: 50px 0 50px 23px;
+  }
 }
 .standards-secB .container .box .col {
   position: relative;
@@ -99,6 +140,16 @@
   background: #3107CA;
   border: 1px solid #FFFFFF;
   transition: 0.5s ease;
+}
+@media only screen and (max-width: 1024px) {
+  .standards-secB .container .box .col::before {
+    left: -8.4%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .standards-secB .container .box .col::before {
+    left: -11.4%;
+  }
 }
 .standards-secB .container .box .col h6 {
   color: var(--white);

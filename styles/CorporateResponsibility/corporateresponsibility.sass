@@ -5,11 +5,25 @@
         overflow: hidden
         &::before
             background: linear-gradient(180deg, rgba(0, 0, 0, 0) 38.46%, rgba(0, 0, 0, 0.55) 100%) !important
+        .bg
+            height: 100vh
+            margin-top: var(--headerfixed)
+            @include media(1024)
+                height: 80vh
+            @include media(768)
+                height: 60vh
+            figure
+                height: 100%
         .banner-wrapper
+            bottom: 11% 
             .heading
                 max-width: 35%
                 margin: auto
                 text-align: center
+                @include media(1024)
+                    max-width: 70%
+                @include media(540)
+                    max-width: 100%
                 h1
                     color: $white
                     font-weight: 700
@@ -17,27 +31,40 @@
                     line-height: 55px
                     text-transform: uppercase
                     margin-bottom: 10px
+                    @include media(540)
+                        font-size: 34px
+                        line-height: 1.2
+
 .corporate-secB
     padding: 90px 0
     background: #F1F1F1
+    @include media(540)
+        padding: 60px 0
     .flex-box
         display: flex
         justify-content: end
         align-items: center
         gap: 80px
+        @include media(768)
+            flex-direction: column-reverse
+            gap: 40px
         .col:first-child
             width: 30%
+            @include media(768)
+                width: 100%
+                max-width: 70%
+            @include media(540)
+                max-width: 100%
             .x-vector-icon
-                width: 363px
-                height: 299px
+                width: 100%
+                height: auto
                 mask-image: url(/assets/images/home/x-vector.png)
                 mask-size: 100%
                 mask-repeat: no-repeat
                 aspect-ratio: 1.22
                 line-height: 0
-
                 @include media(540)
-                    mask-size: 80%
+                    mask-size: 100%
                 video
                     opacity: 1
                     width: 100%
@@ -46,6 +73,12 @@
                     transition: 1s ease-in-out
         .col:last-child
             width: 56%
+            @include media(768)
+                width: 100%
+                max-width: 80%
+                text-align: center
+            @include media(540)
+                max-width: 100%
             p
                 font-weight: 400
                 font-size: 16px
@@ -60,10 +93,18 @@
         display: flex
         justify-content: center
         align-items: center
+        @include media(768)
+            flex-direction: column
+            gap: 40px
         .col:first-child
             border-right: 1px solid #00000047
             padding-right: 30px
             width: 50%
+            @include media(768)
+                width: 100%
+                text-align: center
+                border: none
+                padding: 0
             h6
                 color: #3107CA
                 font-weight: 600
@@ -78,6 +119,12 @@
         .col:last-child
             width: 40%
             padding: 0 50px 
+            @include media(1024)
+                padding: 0 0px 0 50px
+            @include media(768)
+                width: 100%
+                text-align: center
+                padding: 0
             a
                 border: 1px solid #3107CA
                 border-radius: 25px

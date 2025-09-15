@@ -17,10 +17,40 @@
 .corporate-secA .banner::before {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 38.46%, rgba(0, 0, 0, 0.55) 100%) !important;
 }
+.corporate-secA .banner .bg {
+  height: 100vh;
+  margin-top: var(--headerfixed);
+}
+@media only screen and (max-width: 1024px) {
+  .corporate-secA .banner .bg {
+    height: 80vh;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .corporate-secA .banner .bg {
+    height: 60vh;
+  }
+}
+.corporate-secA .banner .bg figure {
+  height: 100%;
+}
+.corporate-secA .banner .banner-wrapper {
+  bottom: 11%;
+}
 .corporate-secA .banner .banner-wrapper .heading {
   max-width: 35%;
   margin: auto;
   text-align: center;
+}
+@media only screen and (max-width: 1024px) {
+  .corporate-secA .banner .banner-wrapper .heading {
+    max-width: 70%;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .corporate-secA .banner .banner-wrapper .heading {
+    max-width: 100%;
+  }
 }
 .corporate-secA .banner .banner-wrapper .heading h1 {
   color: var(--white);
@@ -30,10 +60,21 @@
   text-transform: uppercase;
   margin-bottom: 10px;
 }
+@media only screen and (max-width: 540px) {
+  .corporate-secA .banner .banner-wrapper .heading h1 {
+    font-size: 34px;
+    line-height: 1.2;
+  }
+}
 
 .corporate-secB {
   padding: 90px 0;
   background: #F1F1F1;
+}
+@media only screen and (max-width: 540px) {
+  .corporate-secB {
+    padding: 60px 0;
+  }
 }
 .corporate-secB .flex-box {
   display: flex;
@@ -41,12 +82,29 @@
   align-items: center;
   gap: 80px;
 }
+@media only screen and (max-width: 768px) {
+  .corporate-secB .flex-box {
+    flex-direction: column-reverse;
+    gap: 40px;
+  }
+}
 .corporate-secB .flex-box .col:first-child {
   width: 30%;
 }
+@media only screen and (max-width: 768px) {
+  .corporate-secB .flex-box .col:first-child {
+    width: 100%;
+    max-width: 70%;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .corporate-secB .flex-box .col:first-child {
+    max-width: 100%;
+  }
+}
 .corporate-secB .flex-box .col:first-child .x-vector-icon {
-  width: 363px;
-  height: 299px;
+  width: 100%;
+  height: auto;
   -webkit-mask-image: url(/assets/images/home/x-vector.png);
           mask-image: url(/assets/images/home/x-vector.png);
   -webkit-mask-size: 100%;
@@ -58,8 +116,8 @@
 }
 @media only screen and (max-width: 540px) {
   .corporate-secB .flex-box .col:first-child .x-vector-icon {
-    -webkit-mask-size: 80%;
-            mask-size: 80%;
+    -webkit-mask-size: 100%;
+            mask-size: 100%;
   }
 }
 .corporate-secB .flex-box .col:first-child .x-vector-icon video {
@@ -72,6 +130,18 @@
 }
 .corporate-secB .flex-box .col:last-child {
   width: 56%;
+}
+@media only screen and (max-width: 768px) {
+  .corporate-secB .flex-box .col:last-child {
+    width: 100%;
+    max-width: 80%;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .corporate-secB .flex-box .col:last-child {
+    max-width: 100%;
+  }
 }
 .corporate-secB .flex-box .col:last-child p {
   font-weight: 400;
@@ -90,10 +160,24 @@
   justify-content: center;
   align-items: center;
 }
+@media only screen and (max-width: 768px) {
+  .corporate-secC .flex-box {
+    flex-direction: column;
+    gap: 40px;
+  }
+}
 .corporate-secC .flex-box .col:first-child {
   border-right: 1px solid rgba(0, 0, 0, 0.2784313725);
   padding-right: 30px;
   width: 50%;
+}
+@media only screen and (max-width: 768px) {
+  .corporate-secC .flex-box .col:first-child {
+    width: 100%;
+    text-align: center;
+    border: none;
+    padding: 0;
+  }
 }
 .corporate-secC .flex-box .col:first-child h6 {
   color: #3107CA;
@@ -111,6 +195,18 @@
 .corporate-secC .flex-box .col:last-child {
   width: 40%;
   padding: 0 50px;
+}
+@media only screen and (max-width: 1024px) {
+  .corporate-secC .flex-box .col:last-child {
+    padding: 0 0px 0 50px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .corporate-secC .flex-box .col:last-child {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+  }
 }
 .corporate-secC .flex-box .col:last-child a {
   border: 1px solid #3107CA;

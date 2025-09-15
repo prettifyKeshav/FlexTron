@@ -135,6 +135,8 @@
                     vertical-align: middle
         .swiper-wrapper
             margin: 50px 0 30px 0 
+            @include media(540)
+                margin: 30px 0 
         .swiper-slide
             .item-md
                 padding: 30px 20px 30px
@@ -294,6 +296,8 @@
         align-items: center
         width: 85%
         margin: 0 auto
+        @include media(540)
+            width: 100%
         .card-body
             align-items: center
             display: flex
@@ -357,6 +361,8 @@
             flex-wrap: nowrap
             overflow-x: auto
             z-index: 2
+            @include media(540)
+                gap: 30px
             &::-webkit-scrollbar
                 height: 4px
             &::-webkit-scrollbar-track
@@ -409,6 +415,8 @@
                 top: 8px
                 left: -50%
                 z-index: -1
+                @include media(540)
+                    left: -140%
             &:last-child
                 &::after
                     content: ""

@@ -64,7 +64,7 @@ const Certifications = () => {
                             loop={true}
                             showContent={false}
                             breakpoints={{
-                                0: { slidesPerView: 3.1 },
+                                0: { slidesPerView: 2.1 },
                                 540: { slidesPerView: 4 },
                                 991: { slidesPerView: 4 },
                                 1200: { slidesPerView: 5 },
