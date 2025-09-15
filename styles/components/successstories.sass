@@ -10,8 +10,11 @@
         top: 9%
         width: 30%
         margin: auto
+        @include media(1024)
+            width: 35%
         @include media(991) 
-            top: 0
+            top: 6%
+            width: 40%
         @include media(540)
             display: none
         button
@@ -37,6 +40,8 @@
             overflow: hidden
             background: white
             padding: 30px 40px 30px
+            @include media(540)
+                padding: 30px 20px 30px
             figure
                 height: 86px
                 width: 86px
@@ -55,7 +60,11 @@
                 line-height: 24px
                 text-align: center
                 margin: auto
-                margin-bottom: 10px
+                margin-bottom: 20px
+                max-width: 70%
+                @include media(1024)
+                    max-width: 100%
+
             .user-name
                 display: flex
                 justify-content: center

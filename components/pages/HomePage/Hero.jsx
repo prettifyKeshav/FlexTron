@@ -20,31 +20,31 @@ const Hero = () => {
         {
             heading: "Smart Circuits. Brilliant Lighting.",
             subheading: "Where Electronic Circuits Meet2",
-            video: "assets/video/home-bg-banner.mp4",
+            video: "assets/video/industries-banner.mp4",
             description:
                 "Built with unmatched precision, our electronic circuits are engineered to meet the rigorous demands of aerospace-grade performance",
         },
         {
             heading: "Heading 3",
-            video: "/videos/video3.mp4",
+            video: "assets/video/contact-us-banner.mp4",
             subheading: "Default Subheading",
             description: "Default Description",
         },
         {
             heading: "Heading 4",
-            video: "/videos/video4.mp4",
+            video: "assets/video/Holding-Earth.mp4",
             subheading: "Default Subheading",
             description: "Default Description",
         },
         {
             heading: "Heading 5",
-            video: "/videos/video5.mp4",
+            video: "assets/video/Holding-Earth.mp4",
             subheading: "Default Subheading",
             description: "Default Description",
         },
         {
             heading: "Heading 6",
-            video: "/videos/video6.mp4",
+            video: "assets/video/Holding-Earth.mp4",
             subheading: "Default Subheading",
             description: "Default Description",
         },

@@ -17,6 +17,16 @@
 .banner::before {
   background: linear-gradient(270deg, rgba(0, 0, 0, 0) 26.44%, rgba(0, 0, 0, 0.55) 100%) !important;
 }
+@media only screen and (max-width: 1024px) {
+  .banner .bg {
+    height: 80vh;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .banner .bg {
+    height: 60vh;
+  }
+}
 .banner figure {
   height: 100%;
 }
@@ -31,8 +41,20 @@
 .banner .banner-wrapper .container-fluid {
   margin: inherit;
 }
+@media only screen and (max-width: 768px) {
+  .banner .banner-wrapper .container-fluid {
+    position: absolute;
+    bottom: 15%;
+  }
+}
 .banner .banner-wrapper .heading {
   max-width: 632px;
+}
+@media only screen and (max-width: 768px) {
+  .banner .banner-wrapper .heading {
+    max-width: 100%;
+    text-align: center;
+  }
 }
 .banner .banner-wrapper .heading h1 {
   font-weight: 700;
@@ -42,11 +64,28 @@
   color: var(--white);
   margin-bottom: 10px;
 }
+@media only screen and (max-width: 540px) {
+  .banner .banner-wrapper .heading h1 {
+    font-size: 30px;
+    line-height: 1.2;
+  }
+}
 .banner .banner-wrapper .heading p {
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
   color: rgba(255, 255, 255, 0.6980392157);
+}
+@media only screen and (max-width: 768px) {
+  .banner .banner-wrapper .heading p {
+    max-width: 70%;
+    margin: auto;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .banner .banner-wrapper .heading p {
+    display: none;
+  }
 }
 
 .service-secA {
@@ -55,7 +94,7 @@
 }
 @media only screen and (max-width: 540px) {
   .service-secA {
-    padding: 50px 0;
+    padding: 0;
   }
 }
 .service-secA .heading h2 {
@@ -94,12 +133,16 @@
   .service-secA .flex-box:nth-child(odd) .container {
     flex-direction: column;
     gap: 40px;
-    padding: 50px 20px 0px 20px;
+    padding: 50px 20px;
   }
 }
 @media only screen and (max-width: 540px) {
   .service-secA .flex-box:nth-child(odd) .container {
-    padding: 30px 0 0 0;
+    padding: 50px 0;
+  }
+  .service-secA .flex-box:nth-child(odd) .container::before {
+    width: 144px;
+    height: auto;
   }
 }
 .service-secA .flex-box:nth-child(even) .container {
@@ -118,7 +161,15 @@
 }
 @media only screen and (max-width: 540px) {
   .service-secA .flex-box:nth-child(even) .container {
-    padding: 30px 0 0 0;
+    padding: 50px 0;
+  }
+  .service-secA .flex-box:nth-child(even) .container::before {
+    width: 144px;
+    height: auto;
+    bottom: 0 !important;
+    transform: none;
+    top: auto;
+    background: rgb(242, 242, 242);
   }
 }
 .service-secA .flex-box .container {
@@ -129,6 +180,12 @@
   position: relative;
   overflow: hidden;
   align-items: center;
+}
+@media only screen and (max-width: 1024px) {
+  .service-secA .flex-box .container {
+    gap: 40px;
+    padding: 70px 20px;
+  }
 }
 .service-secA .flex-box .container::before {
   content: "";
@@ -151,15 +208,21 @@
   background: white;
   transitionc: 1s ease-in-out;
 }
+@media only screen and (max-width: 540px) {
+  .service-secA .flex-box .container .flex-box-item:first-child {
+    width: 100%;
+  }
+}
 .service-secA .flex-box .container .flex-box-item:first-child figure {
   width: 582px;
   height: 387px;
   border-radius: 15px;
 }
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 540px) {
   .service-secA .flex-box .container .flex-box-item:first-child figure {
-    width: auto;
-    height: auto;
+    width: 90%;
+    height: 100%;
+    margin: auto;
   }
 }
 .service-secA .flex-box .container .flex-box-item:first-child figure img {
@@ -198,6 +261,14 @@
 @media only screen and (max-width: 1024px) {
   .service-secA .flex-box .container .flex-box-item:last-child h3 {
     max-width: 100%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .service-secA .flex-box .container .flex-box-item:last-child h3 {
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+    margin: auto;
+    margin-bottom: 30px;
   }
 }
 @media only screen and (max-width: 540px) {
@@ -273,7 +344,20 @@
   z-index: 0;
   pointer-events: none;
 }
-.service-detail-secA .banner .banner-wrapper {
+@media only screen and (max-width: 768px) {
+  .service-detail-secA .banner::after {
+    background: linear-gradient(181deg, rgba(223, 215, 255, 0.5) 25.48%, #3107CA 100%);
+  }
+}
+.service-detail-secA .banner .bg {
+  height: 100vh;
+}
+@media only screen and (max-width: 540px) {
+  .service-detail-secA .banner .bg {
+    height: 70vh;
+  }
+}
+.service-detail-secA .banner .bg .banner-wrapper {
   display: flex;
   flex-direction: column;
   align-items: start;
@@ -281,19 +365,34 @@
   height: 100%;
   bottom: 0;
 }
-.service-detail-secA .banner .banner-wrapper .container-fluid {
+.service-detail-secA .banner .bg .banner-wrapper .container-fluid {
   margin: inherit;
 }
-.service-detail-secA .banner .banner-image {
+.service-detail-secA .banner .bg .banner-wrapper .container-fluid .banner-image {
   position: absolute;
   right: 8%;
   bottom: 0;
   width: 35%;
 }
+@media only screen and (max-width: 1024px) {
+  .service-detail-secA .banner .bg .banner-wrapper .container-fluid .banner-image {
+    right: 0;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .service-detail-secA .banner .bg .banner-wrapper .container-fluid .banner-image {
+    display: none;
+  }
+}
 
 .service-detail-secB {
   height: 100vh;
   overflow: hidden;
+}
+@media only screen and (max-width: 768px) {
+  .service-detail-secB {
+    height: 50vh;
+  }
 }
 .service-detail-secB img {
   height: 100%;
@@ -306,14 +405,35 @@
   background: var(--white);
   padding: 70px 0;
 }
+@media only screen and (max-width: 768px) {
+  .service-detail-secC {
+    padding: 50px 0;
+  }
+}
 .service-detail-secC .flex-box {
   display: flex;
   justify-content: space-between;
   gap: 70px;
 }
+@media only screen and (max-width: 1024px) {
+  .service-detail-secC .flex-box {
+    gap: 50px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .service-detail-secC .flex-box {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
 .service-detail-secC .flex-box .col:first-child {
   width: 100%;
   max-width: 65%;
+}
+@media only screen and (max-width: 768px) {
+  .service-detail-secC .flex-box .col:first-child {
+    max-width: 100%;
+  }
 }
 .service-detail-secC .flex-box .col:first-child p {
   padding: 0 0 20px 0;
@@ -322,6 +442,13 @@
   font-size: 15px;
   line-height: 24px;
   text-align: justify;
+}
+@media only screen and (max-width: 540px) {
+  .service-detail-secC .flex-box .col:first-child p {
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: center;
+  }
 }
 .service-detail-secC .flex-box .col:first-child h2 {
   font-weight: 600;
@@ -372,6 +499,11 @@
   width: 100%;
   max-width: 35%;
 }
+@media only screen and (max-width: 768px) {
+  .service-detail-secC .flex-box .col:last-child {
+    max-width: 100%;
+  }
+}
 .service-detail-secC .flex-box .col:last-child .form-sec {
   box-shadow: 0px 2px 8px 0px rgba(99, 99, 99, 0.2);
   width: 100%;
@@ -385,6 +517,11 @@
   color: #3F24A2;
   text-align: center;
   margin-bottom: 30px;
+}
+@media only screen and (max-width: 540px) {
+  .service-detail-secC .flex-box .col:last-child .form-sec .form {
+    --item: 1;
+  }
 }
 .service-detail-secC .flex-box .col:last-child .form-sec .form button {
   background: #FFA319;

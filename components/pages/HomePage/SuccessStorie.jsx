@@ -46,14 +46,23 @@ const SuccessStorie = () => {
                             breakpoints={{
                                 0: {
                                     slidesPerView: 1.2,
+                                    spaceBetween: 20,
+
                                 },
-                                540: {
-                                    slidesPerView: 2.1,
+                                768: {
+                                    slidesPerView: 1.4,
+                                    spaceBetween: 20,
                                 },
                                 991: {
                                     slidesPerView: 2.2,
                                 },
-                                1200: {},
+                                1024: {
+                                    spaceBetween: 20,
+                                },
+                                1280: {
+                                    spaceBetween: 80,
+                                    
+                                }
                             }}
                             onSwiper={(swiper) => (swiperRef.current = swiper)}
                         >

@@ -11,7 +11,9 @@ export default function Footer() {
             <footer>
                 <div className="main-footer container">
                     <div className="colA">
-                        <Image src='assets/logo.svg' alt="logo" width={216} height={36} />
+                        <figure>
+                            <Image src='assets/logo.svg' alt="logo" width={216} height={36} />
+                        </figure>
 
                         <div className="social-icons">
                             <a href="javascript:;" target="_blank" rel="noopener noreferrer">
@@ -72,7 +74,13 @@ export default function Footer() {
                                     </a>
                                 </li>
                                 <li className="bottom-btn">
-                                    <Link href="/" data-model=".enquire-pop">
+                                    <Link href="/"
+                                        className="enquire-btn" onClick={() => {
+                                            document.querySelector('.enquire-pop').classList.add('is-open')
+                                            document.querySelector('.overlay').classList.add('is-open')
+                                            document.querySelector('body').classList.add('overflow-hidden')
+                                        }}
+                                    >
                                         get in touch
                                     </Link>
                                 </li>
@@ -83,7 +91,7 @@ export default function Footer() {
                     </div> */}
                 </div>
 
-                <div className="middle-footer">
+                <div className="middle-footer container">
                     <p>© Copyright Since 2005, Flextron Circuit Assembly. All Rights Reserved.</p>
                     <div className="pret">
                         <a href="https://www.prettifycreative.com/" target="_blank">Made by passion  :  Prettify Creative</a>
@@ -94,7 +102,7 @@ export default function Footer() {
                     <Banner
                         videoSrc="assets/video/home-bg-banner.mp4"
                         imageSrc="assets/footer-x-icon.svg"
-                        
+
                     />
                 </div>
             </footer>

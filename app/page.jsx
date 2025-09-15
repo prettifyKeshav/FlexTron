@@ -5,7 +5,7 @@ import HomePage from "@/components/pages/HomePage";
 const Home = () => {
   return (
     <main>
-    <HomePage />
+      <HomePage />
     </main>
   )
 }

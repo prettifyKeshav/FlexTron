@@ -85,7 +85,6 @@ export default function ServiceSlider() {
                         <button className="service-prev"><Image src="assets/icon/swiper-nav-left.svg" width={37} height={37} alt="swiper icon"></Image></button>
                         <button className="service-next"><Image src="assets/icon/swiper-nav-right.svg" width={37} height={37} alt="swiper icon"></Image></button>
                     </div>
-
                     <Swiper
                         ref={swiperRef}
                         modules={[Navigation]}
@@ -104,7 +103,7 @@ export default function ServiceSlider() {
                                 slidesPerView: 2.1,
                             },
                             768: {
-                                slidesPerView: 2.5,
+                                slidesPerView: 2.1,
                             },
                             991: {
                                 slidesPerView: 2.2,

@@ -5,6 +5,11 @@
     overflow: hidden
     &::before
         background: linear-gradient(270deg, rgba(0, 0, 0, 0) 26.44%, rgba(0, 0, 0, 0.55) 100%) !important
+    .bg
+        @include media(1024)
+            height: 80vh
+        @include media(540)
+            height: 60vh
     figure
         height: 100%
     .banner-wrapper
@@ -16,8 +21,14 @@
         justify-content: center
         .container-fluid
             margin: inherit
+            @include media(768)
+                position: absolute
+                bottom: 15%
         .heading
             max-width: 632px
+            @include media(768)
+                max-width: 100%
+                text-align: center
             h1
                 font-weight: 700
                 font-size: 48px
@@ -25,11 +36,19 @@
                 text-transform: uppercase
                 color: $white
                 margin-bottom: 10px
+                @include media(540)
+                    font-size: 30px
+                    line-height: 1.2
             p
                 font-weight: 500
                 font-size: 16px
                 line-height: 24px
                 color: #FFFFFFB2
+                @include media(768)
+                    max-width: 70%
+                    margin: auto
+                @include media(540)
+                    display: none
         // .banner-image
         //         width: 52px
         //         height: 52px
@@ -46,7 +65,7 @@
     overflow: hidden
     background: #F2F2F2
     @include media(540)
-        padding: 50px 0
+        padding: 0 
     .heading
         h2
             font-size: 48px
@@ -62,7 +81,6 @@
                 &::before
                     background: #EFEFEF80
                     transform: none
-
         &:nth-child(odd) .container
             flex-direction: row
             max-width: 1280px
@@ -78,9 +96,12 @@
             @include media(768)
                 flex-direction: column
                 gap: 40px
-                padding: 50px 20px 0px 20px 
+                padding: 50px 20px
             @include media(540)
-                padding: 30px 0 0 0
+                padding: 50px 0
+                &::before
+                    width: 144px
+                    height: auto
         &:nth-child(even) .container
             flex-direction: row-reverse
             max-width: 1280px
@@ -92,7 +113,14 @@
                 gap: 40px
                 padding: 50px 20px 0px 20px 
             @include media(540)
-                padding: 30px 0 0 0
+                padding: 50px 0
+                &::before
+                    width: 144px
+                    height: auto
+                    bottom: 0 !important
+                    transform: none
+                    top: auto
+                    background: rgb(242 242 242)
         .container
             padding: 100px 20px
             display: flex
@@ -101,20 +129,19 @@
             position: relative
             overflow: hidden
             align-items: center
+            @include media(1024)
+                gap: 40px
+                padding: 70px 20px
             &::before
                 content: ""
                 position: absolute
                 width: 364px
                 height: 300px
-                // width: 26%
-                // height: 100%
                 left: 0
                 top: 50%
                 transform: translateY(-50%)
-                // background: url(/assets/images/services/service-bg.png)
                 background-size: contain
                 background-repeat: no-repeat
-
                 mask-image: url(/assets/images/services/service-bg.png)
                 mask-size: 100%
                 mask-repeat: no-repeat
@@ -123,13 +150,16 @@
                 background: white
                 transitionc: 1s ease-in-out
             .flex-box-item:first-child
+                @include media(540)
+                    width: 100%
                 figure
                     width: 582px
                     height: 387px
                     border-radius: 15px
-                    @include media(1024)
-                        width: auto
-                        height: auto
+                    @include media(540)
+                        width: 90%
+                        height: 100%
+                        margin: auto
                     img
                         width: 100%
                         height: 100%
@@ -156,6 +186,10 @@
                     position: relative
                     @include media(1024)
                         max-width: 100%
+                    @include media(768)
+                        max-width: fit-content
+                        margin: auto
+                        margin-bottom: 30px
                     @include media(540)
                         font-size: 25px
                         line-height: 1.1
@@ -213,24 +247,36 @@
             bottom: 0
             z-index: 0
             pointer-events: none
-        .banner-wrapper
-            display: flex 
-            flex-direction: column
-            align-items: start
-            justify-content: center
-            height: 100%
-            bottom: 0
-            .container-fluid
-                margin: inherit
-        .banner-image
-            position: absolute 
-            right: 8% 
-            bottom: 0 
-            width: 35%
+            @include media(768)
+                background: linear-gradient( 181deg, rgba(223, 215, 255, 0.5) 25.48%, #3107CA 100%)
+        .bg
+            height: 100vh
+            @include media(540)
+                height: 70vh
+            .banner-wrapper
+                display: flex 
+                flex-direction: column
+                align-items: start
+                justify-content: center
+                height: 100%
+                bottom: 0
+                .container-fluid
+                    margin: inherit
+                    .banner-image
+                        position: absolute 
+                        right: 8% 
+                        bottom: 0 
+                        width: 35%
+                        @include media(1024)
+                            right: 0
+                        @include media(768)
+                            display: none
 
 .service-detail-secB
     height: 100vh
     overflow: hidden
+    @include media(768)
+        height: 50vh
     img
         height: 100%
         width: 100%
@@ -239,13 +285,22 @@
 .service-detail-secC
     background: $white
     padding: 70px 0 
+    @include media(768)
+        padding: 50px 0
     .flex-box
         display: flex
         justify-content: space-between
         gap: 70px
+        @include media(1024)
+            gap: 50px
+        @include media(768)
+            flex-direction: column
+            gap: 20px
         .col:first-child
             width: 100%
             max-width: 65%
+            @include media(768)
+                max-width: 100%
             p
                 padding: 0 0 20px 0
                 color: $text
@@ -253,6 +308,10 @@
                 font-size: 15px
                 line-height: 24px
                 text-align: justify
+                @include media(540)
+                    font-size: 14px
+                    line-height: 1.5
+                    text-align: center
             h2
                 font-weight: 600
                 font-size: 25px
@@ -292,10 +351,11 @@
                         background: $primary
                         transform: translateY(-50%)
 
-
         .col:last-child
             width: 100%
             max-width: 35%
+            @include media(768)
+                max-width: 100%
             .form-sec
                 box-shadow: 0px 2px 8px 0px #63636333
                 width: 100%
@@ -309,6 +369,8 @@
                     text-align: center
                     margin-bottom: 30px
                 .form
+                    @include media(540)
+                        --item: 1
                     button
                         background: #FFA319
                         padding: 22px 16px

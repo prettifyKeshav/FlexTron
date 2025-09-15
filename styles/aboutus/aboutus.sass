@@ -5,12 +5,23 @@
         overflow: hidden
         &::before
             background: linear-gradient(180deg, rgba(0, 0, 0, 0) 38.46%, rgba(0, 0, 0, 0.55) 100%) !important
+        .bg
+            @include media(1024)
+                height: 80vh
+            @include media(768)
+                height: 60vh
+            figure
+                height: 100%
         .banner-wrapper
             bottom: 10%
             .heading
                 max-width: 38%
                 margin: auto
                 text-align: center
+                @include media(1024)
+                    max-width: 60%
+                @include media(768)
+                    max-width: 100%
                 h1
                     color: $white
                     font-weight: 700
@@ -18,6 +29,9 @@
                     line-height: 55px
                     text-transform: uppercase
                     margin-bottom: 10px
+                    @include media(540)
+                        font-size: 35px
+                        line-height: 1.2
             .banner-image
                 width: 52px
                 height: 52px
@@ -32,10 +46,17 @@
     background: #3107CA
     padding: 100px 0 0 0
     position: relative
+    @include media(768)
+        padding: 70px 0
     .flex-box
         display: flex
         justify-content: space-between
+        @include media(768)
+            flex-direction: column
+            gap: 10px
         .col:first-child
+            @include media(768)
+                width: 100%
             h2
                 color: $white
                 font-family: Poppins
@@ -45,17 +66,28 @@
                 text-transform: uppercase
                 max-width: 439px
                 padding-bottom: 100px
+                @include media(768)
+                    max-width: 100%
+                    padding-bottom: 10px
+                    text-align: center
+                @include media(540)
+                    font-size: 30px
+                    line-height: 1.2
             figure
                 width: 363px
                 height: 299px
                 line-height: 0
+                @include media(768)
+                    display: none
                 img
                     width: 100%
                     height: 100%
                     object-fit: contain
-
         .col:last-child
             width: 50%
+            @include media(768)
+                width: 100%
+                text-align: center
             p
                 font-family: Poppins
                 font-weight: 500
@@ -84,8 +116,10 @@
             top: 9%
             width: 30%
             margin: auto
+            @include media(1024)
+                width: 40%
             @include media(991) 
-                top: 0
+                top: 6px
             @include media(540)
                 display: none
             button
@@ -160,16 +194,10 @@
                 .swiper-pagination-progressbar-fill
                     background: $white
 
-
-
-
-
-
-
-
-
 .about-secE
     height: 100vh
+    @include media(1024)
+        height: auto
     img
         width: 100%
         height: 100%
@@ -201,6 +229,9 @@
         display: flex
         justify-content: space-around
         align-items: center
+        @include media(768)
+            flex-direction: column-reverse
+            gap: 40px
         .col:first-child
             figure
                 width: 363px
@@ -211,6 +242,9 @@
                     object-fit: contain
         .col:last-child
             width: 50%
+            @include media(768)
+                width: 100%
+                text-align: center
             h2
                 font-weight: 700
                 font-size: 24px
@@ -250,7 +284,6 @@
             margin-top: 0
         h2
             color: var(--primary)
-
     .year-swiper-grid
         display: flex
         flex-direction: column
@@ -266,18 +299,26 @@
             display: flex
             justify-content: center
             gap: 4rem            
+            @include media(768)
+                flex-direction: column-reverse
+                gap: 2rem
             figure
                 width: 480px
                 height: 350px
                 border-radius: 10px
                 overflow: hidden
+                @include media(540)
+                    width: 100%
+                    height: 100%
                 img
                     width: 100%
                     height: 100%
                     object-fit: cover
-
             .card-content
                 max-width: 50%
+                @include media(768)
+                    max-width: 100%
+                    text-align: center
                 h5
                     font-weight: 600
                     font-size: 30px
@@ -289,14 +330,12 @@
                     font-size: 16px
                     line-height: 24px
                     color: $text
-
     .year-timeline
         margin: 40px 0 55px
         position: relative
         flex: 1
         @include media(768)
          flex: 1 50%
-
         .container
             max-width: 80%
             @include media(1550)
@@ -331,7 +370,6 @@
             &.fill
                 .timeline-line-right
                     background-color: #FFA319
-
         .year-dot
             display: flex
             flex-direction: column
@@ -441,6 +479,7 @@
                 width: 100%
                 z-index: 999999
                 @include media(540)
+                    display: none
                 button
                     width: 45px
                     height: 45px

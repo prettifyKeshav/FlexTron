@@ -108,6 +108,7 @@ header
                         opacity: 0
                         width: 100%
                         min-width: fit-content
+                        box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px
                         &::before
                             content: ''
                             display: block
@@ -179,7 +180,7 @@ header
                         display: block
                         width: var(--width)
                         height: var(--height)
-                        background-color: #fff
+                        background-color: $primary
                         transition: .5s ease
                         &:not(:last-child)
                             margin-bottom: 7px
@@ -195,6 +196,8 @@ header
             li
                 &:not(:last-child)
                     margin-right: 40px
+                    @include media(1024)
+                        margin-right: 20px
 
         .colC
             display: flex
@@ -220,6 +223,8 @@ header
                     // margin-right: 17px
             li:last-child
                 display: none
+                @include media(768)
+                    display: block
 header
     &.header-fixed
         @include media(991)
@@ -229,7 +234,7 @@ header
         --headerpadding: 14px
         height: var(--headerfixed)
         @include media(768)
-            height: 50px
+            height: 80px
         &::after
             height: 100%
     &.header-fit
@@ -243,9 +248,9 @@ header
     &.header-shadow
         box-shadow: 0px 2px 8px 0px #63636333
 
-
 footer
     position: relative
+    overflow: hidden
     &::before
         content: ""
         position: absolute
@@ -261,10 +266,12 @@ footer
         padding: 50px 25px 10px
         display: flex
         gap: 60px
+        @include media(1024)
+            gap: 0px
         @include media(991)
             flex-direction: column
         @include media(540)     
-            padding: 30px 15px 50px
+            padding: 30px 15px 0px
         .colA
             flex: 0 1 233px 
             flex-direction: column
@@ -272,6 +279,10 @@ footer
             gap: 100px
             @include media(991)
                 margin: 0 auto 20px
+            @include media(768)
+                flex: 0 1 163px
+                gap: 30px
+                
             @include media(540)     
                 margin: 0 auto
             .social-icons
@@ -305,12 +316,14 @@ footer
             display: flex
             gap: 20px
             padding: 0 40px
+            @include media(1024)
+                padding: 0 0 0 40px
             @include media(991)
                 padding: 0 20px
             @include media(540)     
                 flex-wrap: wrap
                 padding: 0
-                gap: 10px
+                gap: 30px
             .list
                 flex: 1 1 10%
                 // flex: 1 1 20%
@@ -381,7 +394,8 @@ footer
                                 text-align: center
                                 text-transform: uppercase
                                 width: fit-content
-
+                                @include media(540)
+                                    padding: 10px 24px
 
                     a
                         display: flex
@@ -394,14 +408,17 @@ footer
         justify-content: space-between
         width: 100%
         align-items: center
-        @include media(540)     
+        @include media(540)
             flex-direction: column
             gap: 5px
+            padding: 30px 25px 80px
         p
             font-family: Poppins
             font-weight: 400
             font-size: 12px
             color: $text
+            @include media(540)
+                text-align: center
         .pret
             a
                 display: flex
@@ -413,7 +430,10 @@ footer
     .bottom-footer
         .bg
             height: 50vh
-            // position: relative
+            @include media(1024)
+                height: 40vh
+            @include media(768)
+                height: 30vh
             .banner-wrapper
                 top: 0%
                 left: 50%
@@ -432,6 +452,10 @@ footer
             display: flex
             justify-content: center
             align-items: center
+            @include media(540)
+                width: 100%
+                height: 100%
+
 
 // footer
 //     background: linear-gradient(270deg, #000000 0%, #464646 100%)

@@ -23,7 +23,7 @@ const About = () => {
                                 </video>
                             </figure>
                             <div className="banner-wrapper">
-                                <div className="container">
+                                <div className="container-fluid">
                                     <div className="heading" data-animate="fade-up">
                                         <h3>Flextron Circuit Assembly</h3>
                                         <p>Are you building a product that requires a reliable, high quality electronic circuit assembly or box-build? If so, Flextron is your one-stop source for product realization, build, test, and ultimate success. We’re specialists in rigid and flexible Printed Circuit Board Assemblies (PCBAs) of all types and technologies</p>

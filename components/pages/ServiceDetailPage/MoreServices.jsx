@@ -108,7 +108,7 @@ const MoreServices = () => {
                                     slidesPerView: 2.1,
                                 },
                                 768: {
-                                    slidesPerView: 2.5,
+                                    slidesPerView: 2,
                                 },
                                 991: {
                                     slidesPerView: 2.2,
