@@ -246,16 +246,48 @@
 .industries-detail-secA .banner::before {
   background: linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 100%) !important;
 }
+@media only screen and (max-width: 768px) {
+  .industries-detail-secA .banner::before {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 100%) !important;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .industries-detail-secA .banner .bg {
+    height: 70vh;
+  }
+}
 .industries-detail-secA .banner figure {
   height: 100%;
 }
 .industries-detail-secA .banner .banner-wrapper {
   bottom: 30%;
 }
+@media only screen and (max-width: 768px) {
+  .industries-detail-secA .banner .banner-wrapper {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .industries-detail-secA .banner .banner-wrapper .container-fluid {
+    position: absolute;
+    bottom: 10%;
+  }
+}
 .industries-detail-secA .banner .banner-wrapper .heading {
   max-width: 570px;
   margin: initial;
   text-align: left;
+}
+@media only screen and (max-width: 768px) {
+  .industries-detail-secA .banner .banner-wrapper .heading {
+    max-width: 100%;
+    text-align: center;
+  }
 }
 .industries-detail-secA .banner .banner-wrapper .heading h1 {
   font-weight: 700;
@@ -265,17 +297,35 @@
   color: var(--white);
   margin-bottom: 10px;
 }
+@media only screen and (max-width: 540px) {
+  .industries-detail-secA .banner .banner-wrapper .heading h1 {
+    font-size: 27px;
+    line-height: 1.1;
+  }
+}
 .industries-detail-secA .banner .banner-wrapper .heading p {
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
   color: rgba(255, 255, 255, 0.6980392157);
 }
+@media only screen and (max-width: 540px) {
+  .industries-detail-secA .banner .banner-wrapper .heading p {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.3;
+  }
+}
 
 .industries-detail-secB {
   background: var(--white);
   padding: 70px 0;
   position: relative;
+}
+@media only screen and (max-width: 540px) {
+  .industries-detail-secB {
+    padding: 40px 0;
+  }
 }
 .industries-detail-secB::before {
   content: "";
@@ -292,10 +342,21 @@
   justify-content: space-between;
   gap: 70px;
 }
+@media only screen and (max-width: 768px) {
+  .industries-detail-secB .flex-box {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
 .industries-detail-secB .flex-box .col:first-child {
   width: 100%;
   max-width: 65%;
   z-index: 1;
+}
+@media only screen and (max-width: 768px) {
+  .industries-detail-secB .flex-box .col:first-child {
+    max-width: 100%;
+  }
 }
 .industries-detail-secB .flex-box .col:first-child p {
   padding: 0 0 20px 0;
@@ -304,6 +365,13 @@
   font-size: 15px;
   line-height: 24px;
   text-align: justify;
+}
+@media only screen and (max-width: 540px) {
+  .industries-detail-secB .flex-box .col:first-child p {
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: center;
+  }
 }
 .industries-detail-secB .flex-box .col:first-child h2 {
   font-weight: 600;
@@ -355,6 +423,11 @@
   max-width: 35%;
   z-index: 1;
 }
+@media only screen and (max-width: 768px) {
+  .industries-detail-secB .flex-box .col:last-child {
+    max-width: 100%;
+  }
+}
 .industries-detail-secB .flex-box .col:last-child .form-sec {
   box-shadow: 0px 2px 8px 0px rgba(99, 99, 99, 0.2);
   width: 100%;
@@ -370,6 +443,11 @@
   text-align: center;
   margin-bottom: 30px;
 }
+@media only screen and (max-width: 540px) {
+  .industries-detail-secB .flex-box .col:last-child .form-sec .form {
+    --item: 1;
+  }
+}
 .industries-detail-secB .flex-box .col:last-child .form-sec .form button {
   background: #FFA319;
   padding: 22px 16px;
@@ -380,6 +458,16 @@
   position: relative;
   background: var(--white);
 }
+@media only screen and (max-width: 768px) {
+  .industries-detail-secC {
+    padding: 50px 0 0px;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .industries-detail-secC {
+    padding: 50px 0;
+  }
+}
 .industries-detail-secC .heading {
   text-align: center;
 }
@@ -388,6 +476,11 @@
   font-size: 36px;
   text-transform: uppercase;
   color: var(--primary);
+}
+@media only screen and (max-width: 540px) {
+  .industries-detail-secC .heading h2 {
+    font-size: 28px;
+  }
 }
 .industries-detail-secC .heading p {
   font-size: 36px;
@@ -410,6 +503,11 @@
 .industries-detail-secC .industries-slider {
   margin-top: 40px;
 }
+@media only screen and (max-width: 540px) {
+  .industries-detail-secC .industries-slider {
+    margin-top: 30px;
+  }
+}
 .industries-detail-secC .industries-slider .swiper-nav {
   display: flex;
   align-items: center;
@@ -421,7 +519,7 @@
 }
 @media only screen and (max-width: 991px) {
   .industries-detail-secC .industries-slider .swiper-nav {
-    top: 0;
+    top: 8%;
   }
 }
 @media only screen and (max-width: 540px) {
@@ -505,19 +603,39 @@
 .industries-detail-secC .industries-slider .col:hover figcaption {
   top: 0%;
 }
+@media only screen and (max-width: 540px) {
+  .industries-detail-secC .industries-slider .col:hover figcaption .content {
+    padding: 20px 0 0 10px;
+  }
+}
 .industries-detail-secC .industries-slider .col:hover figcaption .content h5 {
   margin-bottom: 20px;
+}
+@media only screen and (max-width: 540px) {
+  .industries-detail-secC .industries-slider .col:hover figcaption .content h5 {
+    font-size: 16px;
+  }
 }
 .industries-detail-secC .industries-slider .col:hover figcaption .content p {
   scale: 1;
   margin-left: 0;
   margin-top: 0;
 }
+@media only screen and (max-width: 540px) {
+  .industries-detail-secC .industries-slider .col:hover figcaption .content p {
+    font-size: 11px;
+  }
+}
 .industries-detail-secC .industries-slider .col:hover figure::before {
   background: #3107CA;
 }
 .industries-detail-secC .industries-slider .col:hover figure::after {
   opacity: 0.4;
+}
+@media only screen and (max-width: 540px) {
+  .industries-detail-secC .industries-slider .col:hover figure::after {
+    opacity: 0.1;
+  }
 }
 .industries-detail-secC .industries-slider .col figure {
   position: relative;
@@ -571,6 +689,11 @@
 .industries-detail-secC .industries-slider .col figure figcaption .content {
   padding: 40px 0 0 30px;
 }
+@media only screen and (max-width: 540px) {
+  .industries-detail-secC .industries-slider .col figure figcaption .content {
+    padding: 20px 0 0 10px;
+  }
+}
 .industries-detail-secC .industries-slider .col figure figcaption .content h5 {
   font-weight: 600;
   font-size: 24px;
@@ -578,6 +701,11 @@
   color: var(--white);
   margin-bottom: 90px;
   transition: 0.8s ease;
+}
+@media only screen and (max-width: 540px) {
+  .industries-detail-secC .industries-slider .col figure figcaption .content h5 {
+    font-size: 16px;
+  }
 }
 .industries-detail-secC .industries-slider .col figure figcaption .content p {
   line-height: 1.3 !important;
@@ -591,12 +719,24 @@
   margin-top: 40px;
   transition: 0.8s ease;
 }
+@media only screen and (max-width: 540px) {
+  .industries-detail-secC .industries-slider .col figure figcaption .content p {
+    font-size: 11px;
+    max-width: 95%;
+  }
+}
 .industries-detail-secC .industries-slider .col figure figcaption .content .bottom-btn {
   border-radius: 25px;
   padding: 16px 24px;
   background: #FFA319;
   display: inline-block;
   margin-top: 50px;
+}
+@media only screen and (max-width: 540px) {
+  .industries-detail-secC .industries-slider .col figure figcaption .content .bottom-btn {
+    margin-top: 20px;
+    padding: 10px 24px;
+  }
 }
 .industries-detail-secC .industries-slider .col figure figcaption .content .bottom-btn span {
   font-weight: 600;

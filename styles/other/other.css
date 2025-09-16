@@ -16,6 +16,11 @@
   margin: auto;
   padding: 0 0 50px 0;
 }
+@media only screen and (max-width: 540px) {
+  .content {
+    max-width: 90%;
+  }
+}
 .content h1 {
   font-size: 48px;
   margin-bottom: 25px;
@@ -62,6 +67,11 @@
   margin-bottom: 20px;
   padding-left: 35px;
 }
+@media only screen and (max-width: 540px) {
+  .content ul {
+    padding-left: 0;
+  }
+}
 .content li {
   position: relative;
   padding-left: 35px;
@@ -104,6 +114,12 @@
   width: 620px;
   height: 350px;
   margin: auto;
+}
+@media only screen and (max-width: 540px) {
+  .thanks-banner .content .logo, .error-banner .content .logo {
+    width: 100%;
+    height: 290px;
+  }
 }
 .thanks-banner .content .logo img, .error-banner .content .logo img {
   width: 100%;

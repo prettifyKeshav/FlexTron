@@ -1,10 +1,14 @@
-"use-client"
+"use client"
 import React from 'react'
 import Link from "next/link";
 import Image from 'next/image';
+import { useModalStore } from "@/store/modalStore";
+
 
 
 const About = () => {
+    const openVideo = useModalStore((state) => state.openVideo)
+
     return (
         <>
             <section>
@@ -37,7 +41,7 @@ const About = () => {
                                             <span>20+ Years</span>
                                             <p>Years of Excellence</p>
                                         </div>
-                                        <div className="play-button" data-model=".video-pop">
+                                        <div className="play-button" onClick={openVideo} data-video="https://www.youtube.com/embed/EG3n3TRMDXo?si=4HqoHycaR7RSPV3z">
                                             <button type="button" className="play-btn"></button>
                                         </div>
                                     </div>

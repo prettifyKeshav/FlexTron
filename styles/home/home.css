@@ -157,11 +157,11 @@
   transition: 0.5s ease;
 }
 @media only screen and (max-width: 540px) {
-  .banner.home-banner .swiper .swiper-pagination span:first-child::before {
-    content: none;
+  .banner.home-banner .swiper .swiper-pagination span::before {
+    content: none !important;
   }
-  .banner.home-banner .swiper .swiper-pagination span:first-child::after {
-    content: none;
+  .banner.home-banner .swiper .swiper-pagination span::after {
+    content: none !important;
   }
 }
 .banner.home-banner .swiper .swiper-pagination span::before {

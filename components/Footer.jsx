@@ -1,11 +1,18 @@
 "use client"
+
 import Link from "next/link"
 import Image from "next/image"
-// import FooterStrip from "./FooterStrip"
 import Banner from "@/components/Banner";
+import FooterStrip from "./FooterStrip";
+import Hamburger from "./Hamburger";
+import EnquirePop from "./EnquirePop";
+import { useModalStore } from "@/store/modalStore"
+import Overlay from "./Overlay";
+import VideoPopup from "./VideoPop";
 
 
 export default function Footer() {
+    const openEnquire = useModalStore((state) => state.openEnquire)
     return (
         <>
             <footer>
@@ -48,8 +55,8 @@ export default function Footer() {
                             <ul>
                                 <li><Link href="/terms-conditions">Terms & Conditions</Link></li>
                                 <li><Link href="/about-us">About Flextron</Link></li>
-                                <li><Link href="/">Industries</Link></li>
-                                <li><Link href="/">Capabilities</Link></li>
+                                <li><Link href="/industries">Industries</Link></li>
+                                <li><Link href="/capabilities">Capabilities</Link></li>
                                 <li><Link href="/blog">Blogs</Link></li>
                                 <li><Link href="/contact-us">Contact Us</Link></li>
                                 <li><Link href="/privacy-policy">Privacy Policy</Link></li>
@@ -73,16 +80,8 @@ export default function Footer() {
                                         <span>(630) 766-1000</span>
                                     </a>
                                 </li>
-                                <li className="bottom-btn">
-                                    <Link href="/"
-                                        className="enquire-btn" onClick={() => {
-                                            document.querySelector('.enquire-pop').classList.add('is-open')
-                                            document.querySelector('.overlay').classList.add('is-open')
-                                            document.querySelector('body').classList.add('overflow-hidden')
-                                        }}
-                                    >
-                                        get in touch
-                                    </Link>
+                                <li className="bottom-btn enquire-btn" onClick={openEnquire}>
+                                    get in touch
                                 </li>
                             </ul>
                         </div>
@@ -100,20 +99,17 @@ export default function Footer() {
 
                 <div className="bottom-footer">
                     <Banner
-                        videoSrc="assets/video/home-bg-banner.mp4"
-                        imageSrc="assets/footer-x-icon.svg"
+                        videoSrc="/assets/video/home-bg-banner.mp4"
+                        imageSrc="/assets/footer-x-icon.svg"
 
                     />
                 </div>
             </footer>
-            {/* <FooterStrip /> */}
-            <div className="overlay" onClick={() => {
-                document.querySelector('.ham-pop').classList.remove('is-open')
-                document.querySelector('.enquire-pop').classList.remove('is-open')
-                document.querySelector('.overlay').classList.remove('is-open')
-                document.querySelector('body').classList.remove('overflow-hidden')
-            }}>
-            </div>
+            <Overlay />
+            <FooterStrip />
+            <Hamburger />
+            <EnquirePop />
+            <VideoPopup />
         </>
     )
 }

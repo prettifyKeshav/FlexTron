@@ -173,9 +173,11 @@ header
                         height: 23px
                         path
                             fill: red
-                .ham-btn
+                .ham_btn
                     --width: 35px
                     --height: 2px
+                    span:nth-child(2)
+                        transform: translate(-13%)
                     span
                         display: block
                         width: var(--width)
@@ -380,22 +382,21 @@ footer
                                 justify-content: start
                                 align-items: center
                         .bottom-btn
-                            a
-                                border-radius: 25px
-                                padding: 16px 24px
-                                background: #3107CA
-                                color: white
-                                display: flex
-                                justify-content: center
-                                align-items: center
-
-                                font-weight: 600
-                                font-size: 14px
-                                text-align: center
-                                text-transform: uppercase
-                                width: fit-content
-                                @include media(540)
-                                    padding: 10px 24px
+                            border-radius: 25px
+                            padding: 10px 24px
+                            background: #3107CA
+                            color: white
+                            display: flex
+                            justify-content: center
+                            align-items: center
+                            font-weight: 600
+                            font-size: 14px
+                            text-align: center
+                            text-transform: uppercase
+                            width: fit-content
+                            cursor: pointer
+                            @include media(540)
+                                padding: 10px 24px
 
                     a
                         display: flex
@@ -434,6 +435,8 @@ footer
                 height: 40vh
             @include media(768)
                 height: 30vh
+            @include media(540)
+                height: 20vh
             .banner-wrapper
                 top: 0%
                 left: 50%
@@ -595,68 +598,157 @@ footer
 //                     width: 60px
 //                 &:first-child
 //                     flex: 1
-.ham-pop
+
+        
+.model.ham-pop
     right: 0
     max-width: 480px
-    background: linear-gradient(180deg, #d4f9f9 2%, #fff 89%)
     transform: translateX(100%)
+    background: linear-gradient(180deg, #d7ccff 2%, #fff 89%)
     transition: .5s ease
+    z-index: 10
+    nav
+        flex: 1
+    &::before
+        content: ""
+        position: absolute
+        width: 224px
+        height: 300px
+        right: 0
+        top: 95%
+        transform: translateY(-50%)
+        background-size: contain
+        background-repeat: no-repeat
+        mask-image: url(/assets/images/services/service-bg.png)
+        mask-size: 100%
+        mask-repeat: no-repeat
+        aspect-ratio: 1.22
+        line-height: 0
+        background: #66666614
+        transitionc: 1s ease-in-out
     &.is-open
         transform: translateX(0%)
     .close
-        path
-            stroke: $text !important
-            stroke-width: 2 !important
+        top: 17px
+        right: 22px
+        svg
+            width: 18px
+            path
+                stroke: $black !important
+                stroke-width: 2 !important
     .model-body
-        padding: 75px 40px 30px
-        height: 100%
+        padding: 0px 40px 30px
+        margin-top: 40px
+        height: calc(100% - 40px)
         overflow-y: auto
         display: flex
         flex-direction: column
-        background: url(/assets/icon/infra-icon.svg) no-repeat
-        background-position-x: 90%
-        background-position-y: 80%
-        background-size: 100px
-        @include scrollbar(6px,$white,#5e5e5e,8px)
-        @include media(520)
-            padding: 40px 20px
-        .ico
-            max-width: 70px
-            margin-bottom: 55px
-            line-height: 0
-            img,svg
-                width: 100%
-                height: auto
-        .nav-list
-            flex: 1
-            >li
-                // &:not(:last-child)
-                //     margin-bottom: 22px
-                    @include media(1366)
-                        margin-bottom: 20px
-                >a
-                    font-size: 28px
-                    line-height: 1.06
-                    padding: 10px 0  
-                    color: $black
-                    font-family: $poppins
-                    display: block
-                    @include font(500)
-                    @include media(1366)
-                        font-size: 28px
-                    @include media(675)
-                        font-size: 24px
-                    &:hover
-                        color: #1a9aa9
-                        padding-left: 5px
-                        
-        .bottom-list
-            border-top: 1px solid #ccc
-            margin-top: 2rem
-            padding-top: 1rem
+        position: relative
+        @include scrollbar(0px,$black,#fff,0px)
+        @include media(540)
+            padding: 0 20px 40px
+        .icon
             display: flex
             align-items: center
+            // font-family: $LeJ
+            gap: 15px
+            margin-bottom: 30px
+            line-height: 0
+            font-weight: 600
+            letter-spacing: 4px
+            font-size: 30px
+            color: #000
+            img,svg
+                width: 70px
+                height: auto
+                path 
+                    fill: #000
+        .nav-list
+            width: 100%
+            flex: 1
+            .single-menulist
+                font-size: 30px
+                color: #000
+                transition: .5s ease 
+                font-family: $ttrg-bd
+                &:hover
+                    color: $primary
+            >li
+                cursor: pointer
+                &:not(:last-child)
+                    margin-bottom: 15px
+                &.desktop-non
+                    display: none
+                &.hamDropdown
+                    position: relative
+                    &:hover
+                        .title 
+                            h5
+                                color: $primary
+                    .title
+                        display: flex
+                        justify-content: space-between
+                        align-items: center
+                        &.active
+                            img
+                                transform: rotate(90deg)
+                        h5
+                            font-size: 30px
+                            color: #000
+                            transition: .5s ease 
+                            font-family: $ttrg-bd
+                        .arrow
+                            width: 15px
+                            height: 15px
+                            object-fit: contain
+                            transition: .5s ease
+                        svg
+                            transition: .5s ease
+                            width: 16px
+                    .dropdown-menu-ham
+                        max-height: 0
+                        opacity: 0
+                        pointer-events: none
+                        transition: all 0.5s ease
+                        &.active
+                            max-height: 300px
+                            padding-top: 10px
+                            opacity: 1
+                            pointer-events: auto
+                        ul
+                            padding: 0 10px 10px 10px
+                            max-height: 175px
+                            overflow-y: auto
+                            @include scrollbar(4px, #fff, $primary, 4px)
+                            li:first-child
+                                a
+                                    padding-top: 0
+                            li
+                                a
+                                    display: block
+                                    font-size: 16px
+                                    color: black
+                                    padding: 5px 0
+                                    transition: .5s ease
+                                    font-family: $ttrg
+                                    font-weight: 600
+                                    &:hover
+                                        color: $primary
+                >a
+                    font-size: 20px
+                    line-height: 1.06
+                    color: #000
+                    display: inline-block
+                    @include font(500)
+                    &:hover
+                        color: #666
+        .bottom-list
+            margin-top: 4rem
+            padding-top: 1rem
+            display: flex
+            align-items: center 
             gap: 1rem
+            border-top: 1px solid #ccc
             .social-icons
                 a
                     display: inline-flex
@@ -666,69 +758,93 @@ footer
                     height: 40px
                     width: 40px
                     border-radius: 50%
+                    color: #000
                     line-height: 0
                     overflow: hidden
-                    @include before($gradient-a)
-                    color: $text
-                    &::before
-                        border-radius: 50%
-                        transform: scale(1.5)
-                        z-index: -1
-                        opacity: 0
-                        transition: .2s ease
                     &:not(:last-child)
                         margin-right: 4px
-                    svg
+                    &:hover
+                        img
+                            transform: scale(1.1)
+                            opacity: 0.5
+                    img
                         width: 24px
                         height: 24px
-                        path
-                            transition: none
-                            &[stroke],&[fill="none"]
-                                stroke: currentColor
-                            &[fill]
-                                fill: currentColor
-                    &:hover
-                        color: $white
-                        &::before
-                            transition: .5s ease
-                            opacity: 1
-                            transform: scale(1)
+                        filter: invert(1)
+                        transition: .5s ease
 
 .enquire-pop
     right: 0
     transform: translateX(100%)
     transition: .5s ease
-    background: $gradient-e
+    background: #fff
+    // background: linear-gradient(180deg, #d7ccff 2%, #fff 89%)
+    &::before
+        content: ""
+        position: absolute
+        width: 224px
+        height: 300px
+        right: 0
+        top: 95%
+        transform: translateY(-50%)
+        background-size: contain
+        background-repeat: no-repeat
+        mask-image: url(/assets/images/services/service-bg.png)
+        mask-size: 100%
+        mask-repeat: no-repeat
+        aspect-ratio: 1.22
+        line-height: 0
+        background: #66666614
+        transitionc: 1s ease-in-out
     &.is-open
         transform: translateX(0%)
     .model-body
-        padding: 60px 35px 30px
-        height: 100%
+        margin-top: 40px
         overflow-y: auto
+        padding: 0px 35px 30px
+        height: calc( 100% - 40px )
         @include scrollbar(3px,$white,#5e5e5e,8px)
-        @include media(675)
-            padding: 70px 20px 30px
         .title
             text-align: center
             margin-bottom: 2rem
-            h4
-                font-size: 32px
+            .icon
+                width: 70px
+                height: 70px
+                margin: 0 auto 15px
+                img
+                    object-fit: contain
+            h2
+                font-size: 34px
                 color: $black
-                font-family: $poppins
-                @include font(500)
+                font-family: $ttrg-bd
             p
                 color: $text
                 margin-top: 10px
-                font-size: 14px
-                line-height: 20px
-                max-width: 317px
+                font-size: 16px
+                line-height: 1.2
+                max-width: 340px
                 margin-left: auto
                 margin-right: auto
                 @include media(675)
                     font-size: 14px
                     max-width: 300px
         .form
-            --gaptb: 15px
+            --gaptb: 15px 
+            --item: 1
+            --labelbefore: var(--text)
+            --labelafter: #000
+            --borderbefore: var(--text)
+            --borderafter: #000
+        .btn2
+            background: #FFA319
+            border-radius: 25px
+            padding: 8px 34px
+            color: $white
+            width: fit-content
+            font-weight: 600
+            margin: auto
+            margin-top: 30px
+            z-index: 1
 
 .video-pop
     left: 0
@@ -783,7 +899,7 @@ footer
     left: 0
     right: 0
     z-index: 4
-    background: var(--gradient-a)
+    background: $primary
     display: none
     @include media(540)
         display: block
@@ -793,7 +909,9 @@ footer
             flex: 1
             &:not(:last-child)
                 border-right: 1px solid rgb(256 256 256 / 10%)
-            a
+            button
+                width: 100%
+            a,button
                 display: flex
                 flex-direction: column
                 align-items: center

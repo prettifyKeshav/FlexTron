@@ -1,12 +1,13 @@
 "use client";
+import MySelect from "@/components/MySelect";
 import "@/styles/components/enquireform.css";
 import { useEffect, useState } from "react";
-import MySelect from "./MySelect";
+
 
 export default function EnquireForm({ className = "", buttonType = "" }) {
-    const [services, setServices] = useState(null)
+    const [industries, setIndustries] = useState(null)
 
-    const options_Services = [
+    const options_Industries = [
         { value: "Option 1", label: "Option 1" },
         { value: "Option 2", label: "Option 2" },
         { value: "Option 3", label: "Option 3" },
@@ -58,10 +59,10 @@ export default function EnquireForm({ className = "", buttonType = "" }) {
 
             <MySelect
                 id="category-select"
-                placeholder="Services*"
-                options={options_Services}
-                selectedValue={services}
-                onValueChange={setServices}
+                placeholder="Industries*"
+                options={options_Industries}
+                selectedValue={industries}
+                onValueChange={setIndustries}
             />
 
             <div className="form-group full">

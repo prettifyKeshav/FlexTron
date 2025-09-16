@@ -101,12 +101,11 @@
                     background-color: white
                     opacity: 1
                     transition: 0.5s ease
-                    &:first-child
-                        @include media(540)
-                            &::before
-                                content: none
-                            &::after
-                                content: none
+                    @include media(540)
+                        &::before
+                            content: none !important
+                        &::after
+                            content: none !important
                     &::before
                         content: ""
                         position: absolute

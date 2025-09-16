@@ -164,14 +164,33 @@
         overflow: hidden
         &::before
             background: linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 100%) !important
+            @include media(768)
+                background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 100%) !important
+        .bg
+            @include media(768)
+                height: 70vh
         figure
             height: 100%
         .banner-wrapper
             bottom: 30%
+            @include media(768)
+                height: 100%
+                display: flex
+                flex-direction: column
+                justify-content: center
+                align-items: center
+                bottom: 0
+            .container-fluid
+                @include media(768)
+                    position: absolute
+                    bottom: 10%
             .heading
                 max-width: 570px
                 margin: initial
                 text-align: left
+                @include media(768)
+                    max-width: 100%
+                    text-align: center
                 h1
                     font-weight: 700
                     font-size: 48px
@@ -179,17 +198,25 @@
                     text-transform: uppercase
                     color: $white
                     margin-bottom: 10px
+                    @include media(540)
+                        font-size: 27px
+                        line-height: 1.1
                 p
                     font-weight: 500
                     font-size: 16px
                     line-height: 24px
                     color: #FFFFFFB2
-
+                    @include media(540)
+                        font-weight: 500
+                        font-size: 14px
+                        line-height: 1.3
 
 .industries-detail-secB
     background: $white
     padding: 70px 0 
     position: relative
+    @include media(540)
+        padding: 40px 0
     &::before
         content: ""
         position: absolute
@@ -203,10 +230,15 @@
         display: flex
         justify-content: space-between
         gap: 70px
+        @include media(768)
+            flex-direction: column
+            gap: 20px
         .col:first-child
             width: 100%
             max-width: 65%
             z-index: 1
+            @include media(768)
+                max-width: 100%
             p
                 padding: 0 0 20px 0
                 color: $text
@@ -214,6 +246,10 @@
                 font-size: 15px
                 line-height: 24px
                 text-align: justify
+                @include media(540)
+                    font-size: 14px
+                    line-height: 1.5
+                    text-align: center
             h2
                 font-weight: 600
                 font-size: 25px
@@ -257,6 +293,8 @@
             width: 100%
             max-width: 35%
             z-index: 1
+            @include media(768)
+                max-width: 100%
             .form-sec
                 box-shadow: 0px 2px 8px 0px #63636333
                 width: 100%
@@ -271,6 +309,8 @@
                     text-align: center
                     margin-bottom: 30px
                 .form
+                    @include media(540)
+                        --item: 1
                     button
                         background: #FFA319
                         padding: 22px 16px
@@ -280,6 +320,10 @@
 .industries-detail-secC
     position: relative
     background: $white
+    @include media(768)
+        padding: 50px 0 0px
+    @include media(540)
+        padding: 50px 0
     .heading
         text-align: center
         h2
@@ -287,6 +331,8 @@
             font-size: 36px
             text-transform: uppercase
             color: $primary
+            @include media(540)
+                font-size: 28px
         p
             font-size: 36px
             line-height: 1.2
@@ -300,6 +346,8 @@
                 font-size: 20px
     .industries-slider
         margin-top: 40px
+        @include media(540)
+            margin-top: 30px
         .swiper-nav
             display: flex
             align-items: center
@@ -309,7 +357,7 @@
             right: 3%
             top: 9%
             @include media(991) 
-                top: 0
+                top: 8%
             @include media(540)
                 display: none
             button
@@ -377,17 +425,25 @@
                 figcaption
                     top: 0%
                     .content
+                        @include media(540)
+                            padding: 20px 0 0 10px
                         h5
                             margin-bottom: 20px
+                            @include media(540)
+                                font-size: 16px
                         p
                             scale: 1
                             margin-left: 0
                             margin-top: 0
+                            @include media(540)
+                                font-size: 11px
                 figure
                     &::before
                         background: #3107CA
                     &::after
                         opacity: 0.4
+                        @include media(540)
+                            opacity: 0.1
             figure
                 position: relative
                 overflow: hidden 
@@ -432,6 +488,8 @@
                         top: 70%
                     .content
                         padding: 40px 0 0 30px
+                        @include media(540)
+                            padding: 20px 0 0 10px
                         h5
                             font-weight: 600
                             font-size: 24px
@@ -440,6 +498,8 @@
                             // margin-bottom: 25px
                             margin-bottom: 90px
                             transition: 0.8s ease
+                            @include media(540)
+                                font-size: 16px
                         p
                             line-height: 1.3 !important
                             color: $white
@@ -451,12 +511,18 @@
                             margin-left: 20px
                             margin-top: 40px
                             transition: 0.8s ease
+                            @include media(540)
+                                font-size: 11px
+                                max-width: 95%
                         .bottom-btn
                             border-radius: 25px
                             padding: 16px 24px
                             background: #FFA319
                             display: inline-block
                             margin-top: 50px
+                            @include media(540)
+                                margin-top: 20px
+                                padding: 10px 24px
                             span
                                 font-weight: 600
                                 font-size: 16px

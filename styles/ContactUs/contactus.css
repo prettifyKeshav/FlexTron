@@ -17,12 +17,17 @@
   position: relative;
   overflow: hidden;
 }
+@media only screen and (max-width: 540px) {
+  .contact-secA {
+    padding: 160px 20px 40px;
+  }
+}
 .contact-secA::before {
   content: "";
   position: absolute;
   width: 364px;
   height: 300px;
-  right: -5%;
+  right: 0%;
   bottom: 0;
   background-size: contain;
   background-repeat: no-repeat;
@@ -37,12 +42,29 @@
   background: rgba(255, 255, 255, 0.5019607843);
   transitionc: 1s ease-in-out;
 }
+@media only screen and (max-width: 540px) {
+  .contact-secA::before {
+    width: 94px;
+    height: auto;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .contact-secA .heading {
+    text-align: center;
+  }
+}
 .contact-secA .heading h1 {
   font-weight: 700;
   font-size: 48px;
   line-height: 55px;
   text-transform: uppercase;
   color: var(--white);
+}
+@media only screen and (max-width: 540px) {
+  .contact-secA .heading h1 {
+    font-size: 38px;
+    line-height: 1.3;
+  }
 }
 .contact-secA .heading p {
   font-weight: 500;
@@ -55,12 +77,22 @@
   gap: 20px;
   padding: 50px 0 40px 0;
 }
+@media only screen and (max-width: 768px) {
+  .contact-secA .grid-box {
+    flex-direction: column;
+  }
+}
 .contact-secA .grid-box .col {
   background: var(--white);
   width: 284px;
   height: 174px;
   border-radius: 10px;
   padding: 20px;
+}
+@media only screen and (max-width: 768px) {
+  .contact-secA .grid-box .col {
+    width: 100%;
+  }
 }
 .contact-secA .grid-box .col .head {
   display: flex;
@@ -113,6 +145,11 @@
 .contact-secA .grid-box .col:nth-child(3) a:hover {
   color: var(--primary);
 }
+@media only screen and (max-width: 768px) {
+  .contact-secA .bottom-btn {
+    text-align: center;
+  }
+}
 .contact-secA .bottom-btn a {
   font-weight: 600;
   font-size: 14px;
@@ -129,6 +166,16 @@
 .contact-secB {
   height: 100vh;
   overflow: hidden;
+}
+@media only screen and (max-width: 1024px) {
+  .contact-secB {
+    height: auto;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .contact-secB {
+    height: 60vh;
+  }
 }
 .contact-secB figure {
   height: 100%;
@@ -156,9 +203,32 @@
   text-align: center;
   color: #3F24A2;
 }
+@media only screen and (max-width: 540px) {
+  .contact-secC .heading h2 {
+    font-size: 30px;
+    line-height: 1.1;
+  }
+}
 .contact-secC .form {
   max-width: 40%;
   margin: 50px auto;
+}
+@media only screen and (max-width: 1024px) {
+  .contact-secC .form {
+    max-width: 50%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .contact-secC .form {
+    max-width: 70%;
+    margin: 50px auto 0;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .contact-secC .form {
+    max-width: 90%;
+    --item: 1;
+  }
 }
 .contact-secC .form .submit-btn {
   text-align: center;
@@ -174,7 +244,15 @@
 
 .contact-secD {
   line-height: 0;
+  height: 100vh;
+  overflow: hidden;
+}
+@media only screen and (max-width: 540px) {
+  .contact-secD {
+    height: 70vh;
+  }
 }
 .contact-secD iframe {
   border: 0;
+  height: 100%;
 }/*# sourceMappingURL=contactus.css.map */

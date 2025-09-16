@@ -391,10 +391,10 @@
   --headerpadding: 35px;
   --headerheight: 120px;
   --headerfixed: 82px;
-  --footerstrip: 66px;
-  --primary: #3F24A2;
+  --footerstrip: 64px;
+  --primary: #3107CA;
   --secondary: #3107CA;
-  --gradient-a: linear-gradient(90deg, #1B2C82 0%, #26CFCE 100%);
+  --gradient-a: linear-gradient(90deg, rgb(59, 24, 198) 22.12%, #D3CEE6 96.63%);
   --gradient-b: linear-gradient(90deg, var(--secondary) 0%, var(--primary) 100%);
   --gradient-c: linear-gradient(270deg, #D8D8D8 0%, #EBEBEB 50%, #C5C5C5 100%);
   --gradient-d: linear-gradient(360deg, #E6E6E6 0%, #C6C6C6 100%);

@@ -11,8 +11,18 @@
     left: 100%;
   }
 }
+@media only screen and (max-width: 540px) {
+  .blog-secA {
+    padding: 90px 0 50px;
+  }
+}
 .blog-secA .container .heading {
   padding-bottom: 30px;
+}
+@media only screen and (max-width: 540px) {
+  .blog-secA .container .heading {
+    padding-bottom: 0;
+  }
 }
 .blog-secA .container .heading h1 {
   color: var(--primary);
@@ -23,8 +33,9 @@
   padding-bottom: 10px;
 }
 @media only screen and (max-width: 540px) {
-  .blog-secA .container .heading {
-    padding-bottom: 0;
+  .blog-secA .container .heading h1 {
+    font-size: 50px;
+    line-height: 1.1;
   }
 }
 .blog-secA .container .blogs-container {
@@ -33,7 +44,7 @@
   grid-gap: 15px;
   padding: 30px 0 60px;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
   .blog-secA .container .blogs-container {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -59,6 +70,11 @@
   gap: 10px;
   margin: auto;
   transition: 0.5s ease;
+}
+@media only screen and (max-width: 540px) {
+  .blog-secA .container .loadBtn {
+    padding: 10px 24px;
+  }
 }
 .blog-secA .container .loadBtn:hover {
   background: #fb9b0b;
@@ -93,6 +109,11 @@
   z-index: 0;
   pointer-events: none;
 }
+@media only screen and (max-width: 768px) {
+  .blog-detail-secA .banner::after {
+    background: linear-gradient(180deg, rgba(223, 215, 255, 0.5) 25.48%, #3107CA 100%);
+  }
+}
 .blog-detail-secA .banner .banner-wrapper {
   display: flex;
   flex-direction: column;
@@ -107,13 +128,28 @@
 .blog-detail-secA .banner .banner-wrapper .container-fluid .heading {
   max-width: 70%;
 }
+@media only screen and (max-width: 768px) {
+  .blog-detail-secA .banner .banner-wrapper .container-fluid .heading {
+    max-width: 100%;
+  }
+}
 .blog-detail-secA .banner .banner-wrapper .container-fluid .heading p {
   max-width: 632px;
 }
 
+@media only screen and (max-width: 1024px) {
+  .blog-detail-secB .content {
+    padding: 0;
+  }
+}
 .blog-detail-secB .container {
   max-width: 980px;
   margin: 70px auto;
+}
+@media only screen and (max-width: 1024px) {
+  .blog-detail-secB .container {
+    margin: 70px auto 30px;
+  }
 }
 
 .blog-detail-secC {

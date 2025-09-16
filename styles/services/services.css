@@ -354,7 +354,7 @@
 }
 @media only screen and (max-width: 540px) {
   .service-detail-secA .banner .bg {
-    height: 70vh;
+    height: 50vh;
   }
 }
 .service-detail-secA .banner .bg .banner-wrapper {

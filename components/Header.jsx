@@ -1,19 +1,22 @@
 "use client";
+import { useEffect, useState } from "react"
 import Link from "next/link"
 import Image from "next/image"
 import '@/styles/header.css'
 // import { useEffect } from "react"
 // import Hamburger from "./Hamburger";
 // import EnquirePop from "./EnquirePop";
+import { useModalStore } from "@/store/modalStore";
 
 export default function Header() {
+    const openHam = useModalStore((state) => state.openHam);
     return (
         <>
             <header className="header-fixed">
                 <div className="header-wrapper">
                     <div className="colA">
                         <Link href="/" className="logo">
-                            <Image src="assets/logo.svg" width="204" height="25" alt="Flextron logo"></Image>
+                            <Image src="/assets/logo.svg" width="204" height="25" alt="Flextron logo"></Image>
                         </Link>
                     </div>
                     <div className="colB">
@@ -24,7 +27,7 @@ export default function Header() {
                                 <div className="dropdown-menu" role="menu">
                                     <ul>
                                         <li><Link href="/service-detail">
-                                            <Image className="svg" src="/assets/icon/industry.svg" alt="india-entry-services" width={10} height={10}></Image>
+                                            {/* <Image className="svg" src="/assets/icon/industry.svg" alt="india-entry-services" width={10} height={10}></Image> */}
                                             Advanced SMT PCB Assembly</Link></li>
                                         <li><Link href="/service-detail">Design for Manufacturing</Link></li>
                                         <li><Link href="/service-detail">Engineering and Design</Link></li>
@@ -60,11 +63,7 @@ export default function Header() {
                             <li><Link href="telto:+6307661000"> (630) 766-1000</Link></li>
 
                             <li>
-                                <button type="button" onClick={() => {
-                                    document.querySelector('.ham-pop').classList.add('is-open')
-                                    document.querySelector('.overlay').classList.add('is-open')
-                                    document.querySelector('body').classList.add('overflow-hidden')
-                                }} className="ham-btn" data-model=".ham-pop" aria-label="Open Mobile Menu">
+                                <button type="button" className="ham_btn" onClick={openHam}>
                                     <span></span>
                                     <span></span>
                                     <span></span>
