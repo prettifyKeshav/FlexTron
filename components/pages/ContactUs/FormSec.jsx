@@ -43,11 +43,11 @@ const FormSec = () => {
         <>
             <section>
                 <div className="contact-secC">
-                    <div className="heading">
+                    <div className="heading" data-animate="fade-up">
                         <h2>Your Ideas Deserve a Response</h2>
                     </div>
                     {/* <EnquireForm /> */}
-                    <form action="" className="form form-grid">
+                    <form action="" className="form form-grid" data-animate="fade-up">
                         <div className="form-group">
                             <input type="text" name="name" className="form-control" id="name" />
                             <label htmlFor="name">Name</label>

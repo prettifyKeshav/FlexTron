@@ -1,23 +1,23 @@
 "use client";
-import { useEffect, useState } from "react"
 import Link from "next/link"
 import Image from "next/image"
 import '@/styles/header.css'
-// import { useEffect } from "react"
-// import Hamburger from "./Hamburger";
-// import EnquirePop from "./EnquirePop";
 import { useModalStore } from "@/store/modalStore";
 
 export default function Header() {
     const openHam = useModalStore((state) => state.openHam);
+    // const handleLogoClick = () => {
+    //     window.location.reload();
+    //     window.location.href = "/";
+    // };
     return (
         <>
             <header className="header-fixed">
                 <div className="header-wrapper">
                     <div className="colA">
-                        <Link href="/" className="logo">
+                        <a href="/" className="logo" >
                             <Image src="/assets/logo.svg" width="204" height="25" alt="Flextron logo"></Image>
-                        </Link>
+                        </a>
                     </div>
                     <div className="colB">
                         <ul className="nav-a">
@@ -60,7 +60,7 @@ export default function Header() {
                     <div className="colC">
                         <ul className="nav-b">
                             {/* <li><Link href="#"><Image className="svg" alt="icon" width={25} height={25} src="assets/icon/world.svg"/>16+ Countries</Link></li> */}
-                            <li><Link href="telto:+6307661000"> (630) 766-1000</Link></li>
+                            <li><Link href="tel:+6307661000"> (630) 766-1000</Link></li>
 
                             <li>
                                 <button type="button" className="ham_btn" onClick={openHam}>
@@ -73,8 +73,6 @@ export default function Header() {
                     </div>
                 </div>
             </header>
-            {/* <Hamburger /> */}
-            {/* <EnquirePop /> */}
         </>
     )
 }

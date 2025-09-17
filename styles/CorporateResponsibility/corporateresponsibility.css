@@ -13,6 +13,17 @@
 }
 .corporate-secA .banner {
   overflow: hidden;
+  height: 100vh;
+}
+@media only screen and (max-width: 1024px) {
+  .corporate-secA .banner {
+    height: 80vh;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .corporate-secA .banner {
+    height: 60vh;
+  }
 }
 .corporate-secA .banner::before {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 38.46%, rgba(0, 0, 0, 0.55) 100%) !important;

@@ -34,6 +34,7 @@
   bottom: 10%;
 }
 .about-secA .banner .banner-wrapper .heading {
+  width: 100%;
   max-width: 38%;
   margin: auto;
   text-align: center;
@@ -79,6 +80,7 @@
   background: #3107CA;
   padding: 100px 0 0 0;
   position: relative;
+  overflow: hidden;
 }
 @media only screen and (max-width: 768px) {
   .about-secB {

@@ -9,8 +9,8 @@ const Hero = () => {
             <div className="industries-detail-secA">
                 <Banner
                     videoSrc={"/assets/video/capabilities-banner.mp4"}
-                    h1tag={"Flexible & Rigid PCB Assembly"}
-                    description={"Surface Mount Assembly (01005s, 0201s to Fine Pitch Devices including Micro BGAs)"}
+                    h1tag={"Capabilities"}
+                    description={"Flextron, using state-of-the-art equipments and at fully ESD protected facility"}
                 />
             </div>
         </>

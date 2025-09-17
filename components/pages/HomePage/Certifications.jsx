@@ -32,26 +32,19 @@ const Certifications = () => {
             alternate: "Certification six",
         },
     ];
-    
+
     return (
         <>
             <section>
-                <div className="home-secD">
+                <div className="home-secD" data-animate="fade-up">
                     <div className="container">
                         <div className="heading text-center">
                             <h2>Certifications</h2>
                         </div>
 
                         <div className="content">
-                            <p>
-                                Flextron Circuit Assembly truly believes to build quality in
-                                product and right way to do it is; by the book. We have
-                                accredited certifications and qualified processes to prove
-                                superior quality of products built by Flextron. Working with
-                                companies that comply to international standards reduces the
-                                risk of errors and makes your own traceability easier.
-                            </p>
-                            <Link href="#" className="bottom-btn">
+                            <p>Flextron Circuit Assembly does it by the book, and we have the accreditation to prove it. Working with companies that comply to international standards reduces the risk of errors and makes your own traceability easier.</p>
+                            <Link href="/standards-certifications" className="bottom-btn">
                                 <span>Read More</span>
                             </Link>
                         </div>

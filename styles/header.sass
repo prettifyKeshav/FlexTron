@@ -373,6 +373,8 @@ footer
                         li:first-child  
                             span
                                 max-width: 60%
+                                @include media(540)
+                                    max-width: 100%
                         .phone
                             a
                                 font-weight: 600
@@ -458,7 +460,6 @@ footer
             @include media(540)
                 width: 100%
                 height: 100%
-
 
 // footer
 //     background: linear-gradient(270deg, #000000 0%, #464646 100%)
@@ -599,7 +600,6 @@ footer
 //                 &:first-child
 //                     flex: 1
 
-        
 .model.ham-pop
     right: 0
     max-width: 480px
@@ -668,11 +668,11 @@ footer
             flex: 1
             .single-menulist
                 font-size: 30px
-                color: #000
+                color: $primary
                 transition: .5s ease 
                 font-family: $ttrg-bd
                 &:hover
-                    color: $primary
+                    color: #FFA319
             >li
                 cursor: pointer
                 &:not(:last-child)
@@ -684,7 +684,7 @@ footer
                     &:hover
                         .title 
                             h5
-                                color: $primary
+                                color: #FFA319
                     .title
                         display: flex
                         justify-content: space-between
@@ -694,7 +694,7 @@ footer
                                 transform: rotate(90deg)
                         h5
                             font-size: 30px
-                            color: #000
+                            color: $primary
                             transition: .5s ease 
                             font-family: $ttrg-bd
                         .arrow
@@ -727,13 +727,13 @@ footer
                                 a
                                     display: block
                                     font-size: 16px
-                                    color: black
+                                    color: $primary
                                     padding: 5px 0
                                     transition: .5s ease
                                     font-family: $ttrg
                                     font-weight: 600
                                     &:hover
-                                        color: $primary
+                                        color: #FFA319
                 >a
                     font-size: 20px
                     line-height: 1.06
@@ -778,7 +778,7 @@ footer
     transform: translateX(100%)
     transition: .5s ease
     background: #fff
-    // background: linear-gradient(180deg, #d7ccff 2%, #fff 89%)
+    background: linear-gradient(180deg, #d7ccff 2%, #fff 89%)
     &::before
         content: ""
         position: absolute
@@ -815,8 +815,9 @@ footer
                     object-fit: contain
             h2
                 font-size: 34px
-                color: $black
+                color: #3F24A2
                 font-family: $ttrg-bd
+                
             p
                 color: $text
                 margin-top: 10px

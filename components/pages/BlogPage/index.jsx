@@ -56,11 +56,11 @@ const BlogPage = () => {
             <section>
                 <div className="blog-secA mt-hdrfix sec-pad">
                     <div className="container">
-                        <div className="heading text-center">
+                        <div className="heading text-center" data-animate="fade-up">
                             <h1>Blogs</h1>
                             <p>Transforming Infrastructure, Powering Possibilities.</p>
                         </div>
-                        <div className="blogs-container">
+                        <div className="blogs-container" data-animate="zoom-in">
                             {BLOG_DATA.map(blog => (
                                 <BlogCard
                                     key={blog.id}

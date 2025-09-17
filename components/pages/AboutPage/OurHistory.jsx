@@ -127,7 +127,7 @@ const OurHistory = () => {
     return (
         <section className="about-secC">
 
-            <div className="heading text-center">
+            <div className="heading text-center" data-animate="fade-up">
                 <h2>Our History</h2>
                 <p>Flextron was founded in 2005 to specialize in the small-volume PCB assembly jobs that large electronic contract manufacturers won’t fulfill without a commitment to big-volume production. Our company to provide fast, flexible prototype and small volume electronic assembly direct to engineers, with instant online quoting and ordering.</p>
             </div>
@@ -156,7 +156,7 @@ const OurHistory = () => {
 
                 <div className="swiper-parent">
                     <div className="container">
-                        <div className="swiper-wrap">
+                        <div className="swiper-wrap" data-animate="fade-up">
                             <Swiper
                                 modules={[Navigation]}
                                 // loop={true}

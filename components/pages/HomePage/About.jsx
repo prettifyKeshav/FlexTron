@@ -4,8 +4,6 @@ import Link from "next/link";
 import Image from 'next/image';
 import { useModalStore } from "@/store/modalStore";
 
-
-
 const About = () => {
     const openVideo = useModalStore((state) => state.openVideo)
 
@@ -13,7 +11,7 @@ const About = () => {
         <>
             <section>
                 <div className="home-secB sec-pad">
-                    <div className="container">
+                    <div className="container" data-animate="fade-up">
                         <div className="heading text-center">
                             <h2>about us</h2>
                         </div>
@@ -31,11 +29,11 @@ const About = () => {
                                     <div className="heading" data-animate="fade-up">
                                         <h3>Flextron Circuit Assembly</h3>
                                         <p>Are you building a product that requires a reliable, high quality electronic circuit assembly or box-build? If so, Flextron is your one-stop source for product realization, build, test, and ultimate success. We’re specialists in rigid and flexible Printed Circuit Board Assemblies (PCBAs) of all types and technologies</p>
-                                        <Link href="/" className="bottom-btn">
+                                        <Link href="/about-us" className="bottom-btn">
                                             Read More
                                         </Link>
                                     </div>
-                                    <div className="right-wrapper">
+                                    <div className="right-wrapper" data-animate="fade-up">
                                         <Image src="assets/logo-white.svg" width={37} height={37} alt="Flextron white logo"></Image>
                                         <div className="year">
                                             <span>20+ Years</span>

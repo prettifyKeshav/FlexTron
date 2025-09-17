@@ -20,7 +20,7 @@ const services = [
     description:
       "Product manufacturing challenges are identified in each step of the way and recorded properly. DFM reports are communicated to every customer with detailed issues and possible solutions.",
     image: "/assets/images/services/Service-images/2.jpg",
-    animationImg: "fade-left",
+    animationImg: "fade-right",
     animationText: "fade-left",
   },
   {
@@ -38,7 +38,7 @@ const services = [
     description:
       "At Flextron, our ability to turn around rapid prototypes and turn-key solutions for all sizes of production lots is second to none. Our dedicated manufacturing line is equipped with high-speed and flexible component handling pick and place (mounting) machines, stencil printers, fluids dispensers.",
     image: "/assets/images/services/Service-images/4.jpg",
-    animationImg: "fade-left",
+    animationImg: "fade-right",
     animationText: "fade-left",
   },
   {
@@ -47,7 +47,7 @@ const services = [
     description:
       "Our Plated Through-Hole (PTH) assembly process accommodates the full spectrum of through-hole components, including axial, radial, odd-forms, those requiring lead forming and more. We apply unique manual insertion techniques for compound through-hole assembly challenges.",
     image: "/assets/images/services/Service-images/5.jpg",
-    animationImg: "fade-left",
+    animationImg: "fade-right",
     animationText: "fade-left",
   },
   {
@@ -56,7 +56,7 @@ const services = [
     description:
       "Flextron is an industry leader in PCB assembly; our products are built to the highest quality standards and technology, which are required for the Aerospace (AS9100) and Medical (ISO 13485) industries.",
     image: "/assets/images/services/Service-images/6.jpg",
-    animationImg: "fade-left",
+    animationImg: "fade-right",
     animationText: "fade-left",
   },
   {
@@ -65,7 +65,7 @@ const services = [
     description:
       "If you like to complete all operations at one location, you’re not alone; that’s why Flextron is your single source in-house for additional services including component programming, conformal coating, dispensing, potting, box build, mechanical assembly, and more.",
     image: "/assets/images/services/Service-images/7.jpg",
-    animationImg: "fade-left",
+    animationImg: "fade-right",
     animationText: "fade-left",
   },
 ];

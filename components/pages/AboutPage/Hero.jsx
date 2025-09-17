@@ -2,6 +2,8 @@
 
 import Banner from '@/components/Banner'
 import React from 'react'
+import "@/styles/aboutus/aboutus.css"
+
 
 const Hero = () => {
     return (

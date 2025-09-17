@@ -39,7 +39,7 @@ export default function Hamburger() {
       ]
     },
     { id: 4, title: "Capabilities", href: "/capabilities", subitems: [] },
-    { id: 5, title: "Contact Us", href: "/contact", subitems: [] },
+    { id: 5, title: "Contact Us", href: "/contact-us", subitems: [] },
   ];
 
   const handleClick = (index) => {

@@ -150,7 +150,7 @@
     text-align: center;
   }
 }
-.contact-secA .bottom-btn a {
+.contact-secA .bottom-btn button {
   font-weight: 600;
   font-size: 14px;
   line-height: 10px;
@@ -193,7 +193,7 @@
   padding: 70px 0;
 }
 .contact-secC .heading {
-  max-width: 370px;
+  max-width: 480px;
   margin: auto;
 }
 .contact-secC .heading h2 {

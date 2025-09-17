@@ -78,7 +78,7 @@ const MoreServices = () => {
     return (
         <>
             <section>
-                <div className="service-detail-secD sec-pad">
+                <div className="service-detail-secD sec-pad" >
                     <div className="container">
                         <div className="heading">
                             <h2>More services</h2>

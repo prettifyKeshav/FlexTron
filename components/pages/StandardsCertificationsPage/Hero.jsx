@@ -34,7 +34,7 @@ const Hero = () => {
         <>
             <div className="standards-secA">
                 <div className="container">
-                    <div className="heading">
+                    <div className="heading" data-animate="fade-up">
                         <h1>Standards & Certifications</h1>
                         <p>Flextron Circuit Assembly does it by the book, and we have the accreditation to prove it. Working with companies that comply to international standards reduces the risk of errors and makes your own traceability easier.</p>
                     </div>

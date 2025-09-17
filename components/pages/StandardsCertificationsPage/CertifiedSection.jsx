@@ -32,7 +32,7 @@ const CertifiedSection = () => {
       {
         root: null,
         threshold: 0,
-        rootMargin:"-60% 0px -40% 0px",
+        rootMargin: "-60% 0px -40% 0px",
       }
     );
 
@@ -48,7 +48,7 @@ const CertifiedSection = () => {
     <div className="standards-secB">
       <div className="container" ref={containerRef}>
         <div className="box">
-          <div className="col">
+          <div className="col" data-animate="fade-up">
             <h6>Certified: AS9100</h6>
             <p>
               AS9100 is the international Quality Management System standard for
@@ -59,7 +59,7 @@ const CertifiedSection = () => {
             </p>
           </div>
 
-          <div className="col">
+          <div className="col" data-animate="fade-up">
             <h6>Certified: ISO 13485</h6>
             <p>
               ISO 13485 specifies requirements for a quality management system
@@ -70,7 +70,7 @@ const CertifiedSection = () => {
             </p>
           </div>
 
-          <div className="col">
+          <div className="col" data-animate="fade-up">
             <h6>Certified: ISO 9001</h6>
             <p>
               ISO 9001 is the quality management certification from the
@@ -81,7 +81,7 @@ const CertifiedSection = () => {
             </p>
           </div>
 
-          <div className="col">
+          <div className="col" data-animate="fade-up">
             <h6>Certified: ITAR</h6>
             <p>
               ITAR means Flextron Circuit Assembly is registered with the DDTC
@@ -92,7 +92,7 @@ const CertifiedSection = () => {
             </p>
           </div>
 
-          <div className="col">
+          <div className="col" data-animate="fade-up">
             <h6>IPC-A-610, Class 2</h6>
             <p>
               IPC-A-610, Class 2 is our default assembly inspection standard and
@@ -102,7 +102,7 @@ const CertifiedSection = () => {
             </p>
           </div>
 
-          <div className="col">
+          <div className="col" data-animate="fade-up">
             <h6>IPC-A-610, Class 3</h6>
             <p>
               IPC-A-610, Class 3 is assembly inspection standard, the best in
@@ -112,7 +112,7 @@ const CertifiedSection = () => {
             </p>
           </div>
 
-          <div className="col">
+          <div className="col" data-animate="fade-up">
             <h6>JEDEC Standards</h6>
             <p>
               JEDEC Standards define appropriate guidelines for Thermal
@@ -122,7 +122,7 @@ const CertifiedSection = () => {
             </p>
           </div>
 
-          <div className="col">
+          <div className="col" data-animate="fade-up">
             <h6>RoHS/Lead-Free</h6>
             <p>
               RoHS/Lead-Free is European Parliament & Council’s Reduction of

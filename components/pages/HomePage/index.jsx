@@ -1,5 +1,5 @@
-
-import React  from 'react'
+// "use client"
+// import { useEffect } from "react";
 import "@/styles/home/home.css";
 import Hero from './Hero'
 import ServiceSlider from './ServiceSlider';
@@ -17,7 +17,7 @@ const HomePage = () => {
         <About />
         <Industries />
         <Certifications />
-        <SuccessStorie/>
+        <SuccessStorie />
       </main>
     </>
   )

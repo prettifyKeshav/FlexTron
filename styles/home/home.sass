@@ -82,6 +82,9 @@
                 flex-direction: column
                 align-items: center
                 justify-content: center
+            @include media(540)
+                height: 80vh
+                top: 47%
             .swiper-pagination
                 width: 100%
                 display: flex
@@ -214,6 +217,19 @@
                             text-align: center
                         &:last-child 
                             text-align: end
+                    button
+                        padding: 15px 20px
+                        border-radius: 25px
+                        display: inline-block
+                        margin-top: 40px
+                        color: $white
+                        background: #FFA319
+                        font-weight: 600
+                        font-size: 16px
+                        line-height: 10px
+                        text-transform: uppercase
+                        @include media(540)
+                            display: none
                     p
                         font-weight: 500
                         color: $white

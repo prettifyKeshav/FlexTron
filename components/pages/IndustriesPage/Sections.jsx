@@ -20,7 +20,7 @@ const industries = [
     description:
       "Whether you’re developing advanced medical devices or hospital-grade equipment, Flextron Circuit Assembly delivers high performance PCB assemblies built to IPC-A-610 guidelines, ISO 13485 standards, and full RoHS compliance.",
     image: "/assets/images/industries/2.jpg",
-    animationImg: "fade-left",
+    animationImg: "fade-right",
     animationText: "fade-left",
   },
   {
@@ -38,7 +38,7 @@ const industries = [
     description:
       "Whether you’re manufacturing automation systems or heavy industrial equipment, Flextron Circuit Assembly delivers high performance PCB assemblies built to IPC-A-610 guidelines, ISO-certified processes, and RoHS compliance.",
     image: "/assets/images/industries/4.jpg",
-    animationImg: "fade-left",
+    animationImg: "fade-right",
     animationText: "fade-left",
   },
   {
@@ -47,7 +47,7 @@ const industries = [
     description:
       "Whether you’re building telecom infrastructure or next-gen communication devices, Flextron Circuit Assembly delivers high performance PCB assemblies built to IPC-A-610 guidelines, ITU standards, and RoHS compliance.",
     image: "/assets/images/industries/5.jpg",
-    animationImg: "fade-left",
+    animationImg: "fade-right",
     animationText: "fade-left",
   },
   {
@@ -56,7 +56,7 @@ const industries = [
     description:
       "Whether you’re innovating in wireless technology or developing IoT devices, Flextron Circuit Assembly delivers high performance PCB assemblies built to IPC-A-610 guidelines, ISO 9001 standards, and RoHS compliance.",
     image: "/assets/images/industries/6.jpg",
-    animationImg: "fade-left",
+    animationImg: "fade-right",
     animationText: "fade-left",
   }
 ];

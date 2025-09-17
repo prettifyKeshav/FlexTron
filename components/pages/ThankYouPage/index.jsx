@@ -12,7 +12,7 @@ const ThankYouPage = () => {
 
                         <h6>We sincerely appreciate your engagement with FlexTron. Your request has been successfully received. Our team is now processing your information and will reach out to you soon with the next steps.</h6>
 
-                        <div className="bottom-btn">
+                        <div className="bottom-btn" data-animate="zoom-in">
                             <Link href="/">
                                 BACK TO HOME
                             </Link>

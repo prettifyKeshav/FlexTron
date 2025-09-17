@@ -2,16 +2,19 @@
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
+import { useModalStore } from "@/store/modalStore"
 
 const Hero = () => {
+      const openEnquire = useModalStore((state) => state.openEnquire)
+  
   return (
     <>
       <div className="contact-secA">
-        <div className="heading">
+        <div className="heading" data-animate="fade-up">
           <h1>Contact us</h1>
           <p>Connect With Us for Smarter Solutions.</p>
         </div>
-        <div className="grid-box">
+        <div className="grid-box" data-animate="fade-up">
           <div className="col">
             <div className="head">
               <h6>Address</h6>
@@ -38,8 +41,8 @@ const Hero = () => {
           </div>
         </div>
 
-        <div className="bottom-btn">
-          <Link href="/">get in touch</Link>
+        <div className="bottom-btn" data-animate="fade-up">
+          <button onClick={openEnquire}>get in touch</button>
         </div>
       </div>
     </>

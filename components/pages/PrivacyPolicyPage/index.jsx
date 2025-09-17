@@ -9,7 +9,7 @@ const PrivacyPolicyPage = () => {
                     <div className="container">
                         <div className="privacy-policy">
                             <div className="content">
-                                <h1>Privacy Policy</h1>
+                                <h1 data-animate="zoom-in">Privacy Policy</h1>
 
                                 <h3>Privacy Statement</h3>
                                 <p>Flextron Circuit Assembly (FCA) recognizes and respects the privacy of an individual or an entity. We know you want to remain in control of your personal information as well. FCA realizes that earning and retaining your trust is of paramount importance and it’s a responsibility we take very seriously, every day.</p>

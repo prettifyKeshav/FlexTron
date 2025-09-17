@@ -23,11 +23,11 @@ export default function Banner({
                 </figure>
                 <div className="banner-wrapper">
                     <div className="container-fluid">
-                        <div className="heading" data-animate="fade-up">
-                            {h1tag && <h1>{h1tag}</h1>}
-                            {h2tag && <h2>{h2tag}</h2>}
-                            {h3tag && <h3>{h3tag}</h3>}
-                            {description && <p>{description}</p>}
+                        <div className="heading" >
+                            {h1tag && <h1 data-animate="fade-up">{h1tag}</h1>}
+                            {h2tag && <h2 data-animate="fade-up">{h2tag}</h2>}
+                            {h3tag && <h3 data-animate="fade-up">{h3tag}</h3>}
+                            {description && <p data-animate="fade-up">{description}</p>}
 
                             {buttonText && (
                                 <Link href={buttonLink} className="bottom-btn">

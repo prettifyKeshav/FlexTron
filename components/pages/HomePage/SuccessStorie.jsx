@@ -19,7 +19,7 @@ const SuccessStorie = () => {
     return (
         <>
             <section>
-                <div className="home-secE">
+                <div className="home-secE" data-animate="fade-up">
                     <div className="heading">
                         <h2>Success Stories</h2>
                     </div>

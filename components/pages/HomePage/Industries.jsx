@@ -8,10 +8,10 @@ const Industries = () => {
         <>
             <section>
                 <div className="home-secC">
-                    <div className="heading text-center">
+                    <div className="heading text-center" data-animate="fade-up">
                         <h2>Industries We Serve</h2>
                     </div>
-                    <div className="grid-box">
+                    <div className="grid-box" data-animate="fade-up">
                         <div className="col">
                             <figure>
                                 <img src="assets/images/home/industries/1.jpg"></img>
@@ -24,7 +24,7 @@ const Industries = () => {
                                             Assembly delivers high performance PCB assemblies built
                                             to IPC-A-610 guidelines, ITAR and RoHS compliance.
                                         </p>
-                                        <Link href="#" className="bottom-btn">
+                                        <Link href="/industries-detail" className="bottom-btn">
                                             <span>Read More</span>
                                         </Link>
                                     </div>
@@ -44,7 +44,7 @@ const Industries = () => {
                                             Assembly delivers high performance PCB assemblies built
                                             to IPC-A-610 guidelines, ITAR and RoHS compliance.
                                         </p>
-                                        <Link href="#" className="bottom-btn">
+                                        <Link href="/industries-detail" className="bottom-btn">
                                             <span>Read More</span>
                                         </Link>
                                     </div>
@@ -64,7 +64,7 @@ const Industries = () => {
                                             Assembly delivers high performance PCB assemblies built
                                             to IPC-A-610 guidelines, ITAR and RoHS compliance.
                                         </p>
-                                        <Link href="#" className="bottom-btn">
+                                        <Link href="/industries-detail" className="bottom-btn">
                                             <span>Read More</span>
                                         </Link>
                                     </div>
@@ -84,7 +84,7 @@ const Industries = () => {
                                             Assembly delivers high performance PCB assemblies built
                                             to IPC-A-610 guidelines, ITAR and RoHS compliance.
                                         </p>
-                                        <Link href="#" className="bottom-btn">
+                                        <Link href="/industries-detail" className="bottom-btn">
                                             <span>Read More</span>
                                         </Link>
                                     </div>
@@ -104,7 +104,7 @@ const Industries = () => {
                                             Assembly delivers high performance PCB assemblies built
                                             to IPC-A-610 guidelines, ITAR and RoHS compliance.
                                         </p>
-                                        <Link href="#" className="bottom-btn">
+                                        <Link href="/industries-detail" className="bottom-btn">
                                             <span>Read More</span>
                                         </Link>
                                     </div>
@@ -124,7 +124,7 @@ const Industries = () => {
                                             Assembly delivers high performance PCB assemblies built
                                             to IPC-A-610 guidelines, ITAR and RoHS compliance.
                                         </p>
-                                        <Link href="#" className="bottom-btn">
+                                        <Link href="/industries-detail" className="bottom-btn">
                                             <span>Read More</span>
                                         </Link>
                                     </div>

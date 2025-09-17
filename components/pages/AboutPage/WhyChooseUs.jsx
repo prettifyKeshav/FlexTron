@@ -82,11 +82,11 @@ const WhyChooseUs = () => {
         <section>
             <div className="about-secD">
                 <div className="container">
-                    <div className="heaidng text-center">
+                    <div className="heaidng text-center" data-animate="fade-up">
                         <h2>Why Choose Us?</h2>
                     </div>
 
-                    <div className="choose-slider">
+                    <div className="choose-slider" data-animate="fade-up">
                         <Swiper
                             ref={swiperRef}
                             modules={[Navigation, Pagination]}

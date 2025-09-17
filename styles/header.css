@@ -2622,6 +2622,11 @@ footer .main-footer .colB .list:nth-child(3) ul li a {
 footer .main-footer .colB .list:nth-child(3) ul li:first-child span {
   max-width: 60%;
 }
+@media only screen and (max-width: 540px) {
+  footer .main-footer .colB .list:nth-child(3) ul li:first-child span {
+    max-width: 100%;
+  }
+}
 footer .main-footer .colB .list:nth-child(3) ul .phone a {
   font-weight: 600;
   font-size: 25px;
@@ -2837,12 +2842,12 @@ footer .bottom-footer .banner-image {
 }
 .model.ham-pop .model-body .nav-list .single-menulist {
   font-size: 30px;
-  color: #000;
+  color: var(--primary);
   transition: 0.5s ease;
   font-family: "ttrg-bd";
 }
 .model.ham-pop .model-body .nav-list .single-menulist:hover {
-  color: var(--primary);
+  color: #FFA319;
 }
 .model.ham-pop .model-body .nav-list > li {
   cursor: pointer;
@@ -2857,7 +2862,7 @@ footer .bottom-footer .banner-image {
   position: relative;
 }
 .model.ham-pop .model-body .nav-list > li.hamDropdown:hover .title h5 {
-  color: var(--primary);
+  color: #FFA319;
 }
 .model.ham-pop .model-body .nav-list > li.hamDropdown .title {
   display: flex;
@@ -2869,7 +2874,7 @@ footer .bottom-footer .banner-image {
 }
 .model.ham-pop .model-body .nav-list > li.hamDropdown .title h5 {
   font-size: 30px;
-  color: #000;
+  color: var(--primary);
   transition: 0.5s ease;
   font-family: "ttrg-bd";
 }
@@ -2919,14 +2924,14 @@ footer .bottom-footer .banner-image {
 .model.ham-pop .model-body .nav-list > li.hamDropdown .dropdown-menu-ham ul li a {
   display: block;
   font-size: 16px;
-  color: black;
+  color: var(--primary);
   padding: 5px 0;
   transition: 0.5s ease;
   font-family: "ttrg";
   font-weight: 600;
 }
 .model.ham-pop .model-body .nav-list > li.hamDropdown .dropdown-menu-ham ul li a:hover {
-  color: var(--primary);
+  color: #FFA319;
 }
 .model.ham-pop .model-body .nav-list > li > a {
   font-size: 20px;
@@ -2977,6 +2982,7 @@ footer .bottom-footer .banner-image {
   transform: translateX(100%);
   transition: 0.5s ease;
   background: #fff;
+  background: linear-gradient(180deg, #d7ccff 2%, #fff 89%);
 }
 .enquire-pop::before {
   content: "";
@@ -3035,7 +3041,7 @@ footer .bottom-footer .banner-image {
 }
 .enquire-pop .model-body .title h2 {
   font-size: 34px;
-  color: var(--black);
+  color: #3F24A2;
   font-family: "ttrg-bd";
 }
 .enquire-pop .model-body .title p {

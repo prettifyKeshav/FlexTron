@@ -16,7 +16,7 @@ const PageNotFoundPage = () => {
 
                         <h6>Sorry, the page you are looking for could not be found.</h6>
 
-                        <div className="bottom-btn">
+                        <div className="bottom-btn" data-animate="zoom-in">
                             <Link href="/">
                                 BACK TO HOME
                             </Link>
